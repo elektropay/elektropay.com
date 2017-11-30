@@ -1,5 +1,5 @@
 ---
-type = "contact"
+type: contact"
 title: Contact Us
 ---
 
