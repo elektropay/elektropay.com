@@ -2,15 +2,15 @@
   @neat-row;
   color: $darkerGrey;
   overflow: hidden;
-  padding: calc($medium * 1.75) 0 $medium 0;
+  padding: calc($micro * 1.75) 0 $micro 0;
   position: relative;
 
   @media screen and (min-width: $mobile) {
-    padding-top: calc($medium * 1.5);
+    padding-top: calc($micro * 1.5);
   }
 
   @media screen and (min-width: $tablet) {
-    padding-top: calc($medium * 1.5);
+    padding-top: calc($micro * 1.5);
   }
 
   &:before {
@@ -27,7 +27,7 @@
 
   @media screen and (min-width: $tablet) {
     background-position: center;
-    padding: calc($medium * 1.5) 0 $xl 0;
+    padding: calc($micro * 1.5) 0 $micro 0;
   }
 
   .hero-copy {
