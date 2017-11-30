@@ -1,6 +1,6 @@
 ---
 hero:
-  headline: Elektropay helps you easily manage your customer payments.
+  headline: Elektropay helps you easily manage your payments.
   subhead: |
     - Handles user signup, authentication, and custom user data
     - Based on OAuth2 and JSON Web Tokens (JWT)
