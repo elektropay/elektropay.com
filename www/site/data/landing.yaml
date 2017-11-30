@@ -1,6 +1,6 @@
 ---
 hero:
-  headline: A self-standing API service for handling user registration and authentication, accessible with client-side JavaScript using the [GoTrue JS](https://github.com/netlify/gotrue-js) library.
+  headline: Elektropay helps you easily manage your customer payments.
   subhead: |
     - Handles user signup, authentication, and custom user data
     - Based on OAuth2 and JSON Web Tokens (JWT)
