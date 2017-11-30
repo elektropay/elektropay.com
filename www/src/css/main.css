@@ -1,9 +1,8 @@
-@import "imports/base.css";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,900|Roboto+Mono:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body {
   color: #313D3E;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
@@ -16,8 +15,7 @@ body {
 }
 
 h1 {
-  font-weight: 300;
-  font-size: 24px;
+  font-weight: 400;
   line-height: 40px;
   margin: 0 0 -10px 0;
 }
@@ -25,14 +23,12 @@ h1 {
 @media screen and (min-width: 768px) {
 
   h1{
-    font-size: 36px;
     line-height: 48px;
   }
 }
 
 h2 {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin: 0;
 }
@@ -42,16 +38,20 @@ h2.subhead {
 }
 
 h3 {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 32px;
   margin: 0;
 }
 
-p, ul {
+p  {
   font-size: 14px;
   line-height: 24px;
+}
+
+ul {
+  font-size: 10px;
+  line-height: 10px;
 }
 
 @media screen and (min-width: 768px) {
