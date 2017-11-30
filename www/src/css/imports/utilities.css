@@ -13,10 +13,6 @@
 	text-align: center;
 }
 
-.container {
-	@neat-outer-container;
-}
-
 .half,
 .third,
 .quarter {

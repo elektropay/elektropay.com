@@ -46,7 +46,7 @@ header {
 
   .logo {
     margin: 0 auto $tiny auto;
-    padding-top: 12px;
+    padding-top: 6px;
     width: 100%;
 
     @media screen and (min-width: $mobile) {
