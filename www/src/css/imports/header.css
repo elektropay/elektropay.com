@@ -15,13 +15,13 @@ header {
 
   &.scrolled {
     @media screen and (min-width: $mobile) {
-      background: $darkBlue;
+      background: transparent;
       padding: $small 0;
     }
   }
 
   a {
-    color: white;
+    color: $darkBlue;
     display: inline-block;
     vertical-align: middle;
 
