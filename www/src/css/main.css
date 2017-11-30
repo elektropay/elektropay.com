@@ -584,25 +584,25 @@ header .logo img {
 .hero {
   display: block;
   *zoom: 1;
-  background: #1C1E1E;
-  background-image: radial-gradient(at top left, #00c6ff, #0072ff);
-  color: white;
+  background: #FFFFFF;
+  background-image: transparent;
+  color: #1C1E1E;
   overflow: hidden;
-  padding: calc(104px * 1.75) 0 64px 0;
+  padding: calc(25px * 1.75) 0 25px 0;
   position: relative;
 }
 
 @media screen and (min-width: 480px) {
 
   .hero{
-    padding-top: calc(104px * 1.5);
+    padding-top: calc(24px * 1.5);
   }
 }
 
 @media screen and (min-width: 768px) {
 
   .hero{
-    padding-top: calc(64px * 1.5);
+    padding-top: calc(14px * 1.5);
   }
 }
 
@@ -622,7 +622,7 @@ header .logo img {
 
   .hero{
     background-position: center;
-    padding: calc(104px * 1.5) 0 104px 0;
+    padding: calc(24px * 1.5) 0 24px 0;
   }
 }
 
