@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
 
   @media screen and (min-width: $tablet) {
-    text-align: left;
   }
 }
 
@@ -18,7 +17,6 @@ h1 {
   margin: 0 0 -10px 0;
 
   @media screen and (min-width: $tablet) {
-    font-size: 36px;
     line-height: 48px;
   }
 }
