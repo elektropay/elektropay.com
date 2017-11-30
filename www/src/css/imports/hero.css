@@ -2,7 +2,6 @@
   @neat-row;
   color: $darkerGrey;
   overflow: hidden;
-  padding: calc($micro * 1.75) 0 $micro 0;
   position: relative;
 
   @media screen and (min-width: $mobile) {
