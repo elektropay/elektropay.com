@@ -1,7 +1,8 @@
-+++
-date = "2017-29-26T13:19:03+07:00"
-title = "Contact Us"
-+++
+---
+layout: page
+title: Contact Us
+permalink: /contact
+---
 
 
-<h1> Contact Page </h1>
+<h1> Contact Us Page </h1>
