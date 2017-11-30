@@ -5,11 +5,11 @@
   position: relative;
 
   @media screen and (min-width: $mobile) {
-    padding-top: calc($micro * 1.5);
+    padding-top: calc($small * 1.5);
   }
 
   @media screen and (min-width: $tablet) {
-    padding-top: calc($micro * 1.5);
+    padding-top: calc($small * 1.5);
   }
 
   &:before {
