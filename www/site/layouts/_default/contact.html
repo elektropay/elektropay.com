@@ -1,0 +1,10 @@
+{{ partial "header" . }}
+{{ $activePage := .Params.position }}
+
+<div class="docs detail page">
+	<div class="container">
+			{{ .Content }}
+	</div>
+</div>
+
+{{ partial "footer" . }}
