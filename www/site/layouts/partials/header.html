@@ -38,42 +38,53 @@
         <a href="/" class="btn-secondary small"><img src="/img/github.svg"/> Fork me on GitHub</a>
       </div>
     </header>
+	
   
 <header id="header">    
-<div class="navbar">
-<div class="header clearfix">
-<div class="toggle">
-<div class="toggle-bar"></div>
-<div class="toggle-bar"></div>
-<div class="toggle-bar"></div>
-</div>
-
-<a class="logo" href="#" data-nav-section="home">{{ with .Site.Params.nav }}{{ if isset . "logo" }}<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png" height="20" alt="">{{ end }}{{ if (not (isset . "logo")) }}Home{{ end }}{{ end }}</a>
-
-  <ul class="links">
- 
-	{{ if .Site.Params.features.enable }}
-	<a href="features" data-nav-section="features">{{ with .Site.Params.nav.features }}{{ . | markdownify }}{{ end }}</a>
-	{{ end }}
-
- {{ if .Site.Params.integrations.enable }}
-	<a href="integrations" data-nav-section="integrations">{{ with .Site.Params.nav.integrations }}{{ . | markdownify }}{{ end }}</a>
-	{{ end }}
-
-  {{ if .Site.Params.pricing.enable }}
-	<a href="pricing" data-nav-section="pricing">{{ with .Site.Params.nav.pricing }}{{ . | markdownify }}{{ end }}</a>
-	{{ end }}  
-    
-	{{ if .Site.Params.company.enable }}
-	<a href="company" data-nav-section="company">{{ with .Site.Params.nav.company }}{{ . | markdownify }}{{ end }}</a>
-	{{ end }}
-
-	{{ if .Site.Params.contact.enable }}
-	<a href="contact" data-nav-section="contact">{{ with .Site.Params.nav.contact }}{{ . | markdownify }}{{ end }}</a>
-	{{ end }}
-
-     
-</ul>
-</div>
-</div>
+<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top header clearfix">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="logo navbar-brand" href="{{ $baseUrl }}/"><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png"/></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li {{ if .IsHome }}class="active"{{ end }}><a href="{{ $baseUrl }}/">Home</a></li>
+			{{ $url := .URL }}
+			{{ with .Site.Menus.main }}
+				{{ range $menu := . }}
+					<li {{ if eq $url .URL }}class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+				{{ end }}
+			{{ end }}
+				{{ if not .Site.Params.noCategoryLink }}
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+						{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+							<li><a href="{{ $baseUrl }}/categories/{{ $name | urlize }}">{{ title $name }}</a></li>
+						{{ end }}
+						</ul>
+					</li>
+				{{ end }}
+				</ul>
+				{{ with .Site.Params.searchDomain }}
+				<form class="navbar-form navbar-left" role="search" action="https://www.google.co.jp/search" method="get">
+					<div class="input-group doc-search-form">
+						<input type="hidden" name="as_sitesearch" value="{{ . }}">
+						<input type="text" name="as_q" class="search-query doc-search-input-text" placeholder="Search Site">
+						<span class="input-group-addon input-group-btn doc-search-input-btn">
+							<button class="btn" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+						</span>
+					</div>
+				</form>
+				{{ end }}
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>	
    </header>
