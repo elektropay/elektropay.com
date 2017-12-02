@@ -6,7 +6,13 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
 type: contact
-aliases: []
+menu:
+  docs:
+    parent: "contact"
+    weight: 1
+weight: 1
+draft: false
+aliases: [/contact-us/,/contact/]
 toc: false
 layout: contact
 ---
