@@ -5,6 +5,7 @@ description: Elektropay is the world's fastest payments engine. It's written in 
 date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
+menu: ["main", "footer"]
 type: contact
 weight: 1
 draft: false
