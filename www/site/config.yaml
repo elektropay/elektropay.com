@@ -1,10 +1,10 @@
 baseurl: "/"
 languageCode: "en-us"
 title: "Elektropay"
-SectionPagesMenu = "main"
+SectionPagesMenu = main
 disable404: true
 pluralizeListTitles: false
-
+metaDataFormat: "yaml"
 ---
 menu:
   docs:
@@ -20,4 +20,3 @@ menu:
         URL: "/pricing/"
 ---
 
-metaDataFormat: "yaml"
