@@ -47,9 +47,32 @@
 <div class="toggle-bar"></div>
 <div class="toggle-bar"></div>
 </div>
-<a class="logo" href="/"><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png" alt="Logo" /></a>
-<ul class="links">
-      
+
+<a class="logo" href="#" data-nav-section="home">{{ with .Site.Params.nav }}{{ if isset . "logo" }}<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png" height="20" alt="">{{ end }}{{ if (not (isset . "logo")) }}Home{{ end }}{{ end }}</a>
+
+  <ul class="links">
+ 
+	{{ if .Site.Params.features.enable }}
+	<a href="#" data-nav-section="features">{{ with .Site.Params.nav.features }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+ {{ if .Site.Params.integrations.enable }}
+	<a href="#" data-nav-section="integrations">{{ with .Site.Params.nav.integrations }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+  {{ if .Site.Params.pricing.enable }}
+	<a href="#" data-nav-section="pricing">{{ with .Site.Params.nav.pricing }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}  
+    
+	{{ if .Site.Params.company.enable }}
+	<a href="#" data-nav-section="company">{{ with .Site.Params.nav.company }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+
+	{{ if .Site.Params.contact.enable }}
+	<a href="#" data-nav-section="contact">{{ with .Site.Params.nav.contact }}{{ . | markdownify }}{{ end }}</a>
+	{{ end }}
+	
+  
 <li><a class="nav-item" href="features/">Features</a></li>
 <li><a class="nav-item" href="integrations/">Integrations</a></li>
 <li><a class="nav-item" href="pricing/">Pricing</a></li>
