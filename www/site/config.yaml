@@ -1,8 +1,10 @@
 baseurl: "/"
 languageCode: "en-us"
 title: "Elektropay"
+SectionPagesMenu = "main"
 disable404: true
 pluralizeListTitles: false
+
 ---
 menu:
   docs:
