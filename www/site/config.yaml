@@ -1,13 +1,11 @@
 baseurl: "/"
 languageCode: "en-us"
 title: "Elektropay"
-SectionPagesMenu = main
 disable404: true
 pluralizeListTitles: false
 metaDataFormat: "yaml"
 ---
 menu:
-  docs:
       - Name: "contact"
         Pre: "<i class='fa fa-heart'></i>"
         Weight: -110
