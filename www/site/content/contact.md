@@ -6,15 +6,17 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
 type: contact
-menu:
-  docs:
-    parent: "contact"
+[menu]
+     [menu.main]
+        name = "Contact"
+        weight = 4
+        identifier = "contact"
     weight: 1
 weight: 1
 draft: false
 aliases: [/contact-us/,/contact/]
 toc: false
-layout: contact
+layout: contact-form
 ---
 Elektropay is the **world's fastest payments engine.** It's written in Go (aka Golang) and developed by [bep](https://github.com/bep), [spf13](https://github.com/spf13) and [friends](https://github.com/gohugoio/hugo/graphs/contributors). Below you will find some of the most common and helpful pages from our documentation.
 
