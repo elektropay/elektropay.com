@@ -2,10 +2,7 @@
 date: 2017-01-24T16:04:19Z
 title: Contact Us
 type: contact/
----
-
-
-<div class="page">
+--->
 
          <div class="page-inner pt-none">
 
@@ -165,5 +162,4 @@ type: contact/
                </div>
             </div>
          </div>
-        </div>
 
