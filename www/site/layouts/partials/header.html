@@ -53,69 +53,25 @@
   <ul class="links">
  
 	{{ if .Site.Params.features.enable }}
-	<a href="#" data-nav-section="features">{{ with .Site.Params.nav.features }}{{ . | markdownify }}{{ end }}</a>
+	<a href="features" data-nav-section="features">{{ with .Site.Params.nav.features }}{{ . | markdownify }}{{ end }}</a>
 	{{ end }}
 
  {{ if .Site.Params.integrations.enable }}
-	<a href="#" data-nav-section="integrations">{{ with .Site.Params.nav.integrations }}{{ . | markdownify }}{{ end }}</a>
+	<a href="integrations" data-nav-section="integrations">{{ with .Site.Params.nav.integrations }}{{ . | markdownify }}{{ end }}</a>
 	{{ end }}
 
   {{ if .Site.Params.pricing.enable }}
-	<a href="#" data-nav-section="pricing">{{ with .Site.Params.nav.pricing }}{{ . | markdownify }}{{ end }}</a>
+	<a href="pricing" data-nav-section="pricing">{{ with .Site.Params.nav.pricing }}{{ . | markdownify }}{{ end }}</a>
 	{{ end }}  
     
 	{{ if .Site.Params.company.enable }}
-	<a href="#" data-nav-section="company">{{ with .Site.Params.nav.company }}{{ . | markdownify }}{{ end }}</a>
+	<a href="company" data-nav-section="company">{{ with .Site.Params.nav.company }}{{ . | markdownify }}{{ end }}</a>
 	{{ end }}
 
 	{{ if .Site.Params.contact.enable }}
-	<a href="#" data-nav-section="contact">{{ with .Site.Params.nav.contact }}{{ . | markdownify }}{{ end }}</a>
+	<a href="contact" data-nav-section="contact">{{ with .Site.Params.nav.contact }}{{ . | markdownify }}{{ end }}</a>
 	{{ end }}
-	
-  
-<li><a class="nav-item" href="features/">Features</a></li>
-<li><a class="nav-item" href="integrations/">Integrations</a></li>
-<li><a class="nav-item" href="pricing/">Pricing</a></li>
-      
-<li class="dropdown nav-item hidden">
-<a class="dropdown-toggle"  data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" aria-expanded="false" href="javascript:void(0);">
-Customers
-</a>
-<ul class="dropdown-menu">
-<li><a href="customers/startups_and_tech">Startups &amp; Technology Companies</a></li>
-<li><a href="customers/sales_and_account_management">Sales &amp; Account Management</a></li>
-<li><a href="customers/customer_service">Customer Service &amp; Client Success</a></li>
-<li><a href="customers/business_consultants">Business Consultants &amp; Coaches</a></li>
-<li><a href="customers/freelancers">Solopreneurs &amp; Freelancers</a></li>
-<li><a href="customers/financial_services">Financial Services</a></li>
-<li><a href="customers/small_businesses">Busy Professionals</a></li>
-<li><a href="customers/retail_locations">Retail Locations</a></li>
-</ul>
-</li>
-      
-<li class="dropdown nav-item">
-<a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" aria-expanded="false" href="javascript:void(0);">
-Company
-</a>
-<ul class="dropdown-menu">
-<li><a href="company/about/">Meet The Team</a></li>
-<li><a href="company/press">Press Releases</a></li>
-<li><a href="company/careers/">Jobs &amp; Careers</a></li>
-<li><a href="https://blog.elektropay.com/">Elektro_lyte Blog</a></li>
-</ul>
-</li>
-      
-<li><a class="" href="contact">Contact</a></li>
 
-<li class="mobile-off"><a href="#" data-toggle="modal" data-target="#at-login" class="btn-nav-primary" id="btn-login" >Log In</a></li>     
-<li class="mobile-off"><a href="#" data-toggle="modal" data-target="#at-signup" class="last btn-nav-secondary" data-section="navbar">Sign Up&nbsp; </a></li>
-      
-<li class="account-options desktop-off">
-<div class="row">
-<div class="col1of2"><a href="#" data-toggle="modal" data-target="#at-login" class="btn-nav-primary" id="btn-login">Log In</a></div>
-<div class="col1of2"><a href="#" data-toggle="modal" data-target="#at-signup" class="btn-nav-secondary" data-section="navbar">Sign Up &nbsp;</a></div>
-</div>
-</li>
      
 </ul>
 </div>
