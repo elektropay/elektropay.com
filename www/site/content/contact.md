@@ -1,8 +1,8 @@
 ---
 date: 2017-01-24T16:04:19Z
-title: Contact Us
-type: contact/
---->
+title: Elektropay - Payments processing, escrow, and payouts in one simple API | Contact Us
+type: contact
+---
 
          <div class="page-inner pt-none">
 
