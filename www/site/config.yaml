@@ -1,38 +1,8 @@
-baseurl: "/"
+baseurl: "https://brave-hawking-fe06eb.netlify.com/"
 languageCode: "en-us"
 title: "Elektropay"
 disable404: true
 pluralizeListTitles: false
 metaDataFormat: "yaml"
-weight = 1
-copyright = "(c) 2017 Copyright my blog"
 
-name = "Blog"
-pre = ""
-weight = 2
-identifier = "post"
-url = "/post/"
 
-name = "About"
-weight = 1
-identifier = ""
-url = "https://brave-hawking-fe06eb.netlify.com/#/about"
-pre = "<i class='fa fa-road'></i>"
-
-name = "Dashboard"
-identifier = ""
-weight = 3
-url = "https://app.elektropay.io/"
-
-[[menu.footer]] # add  links to the bottom right corner.
-name = "Disclaimer"
-pre = "<i>&middot;</i>"
-identifier = "disclaimer"
-weight = 1
-url = "/disclaimer/"
-
-[[menu.footer]]
-name = "Terms"
-identifier = "terms"
-weight = 2
-url = "/terms/"
