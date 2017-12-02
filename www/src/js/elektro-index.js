@@ -39,7 +39,7 @@
         }) : void 0)
     })), $(".testimonials-carousel-half").on("init", function(e, t) {
         carousel_helper(this)
-    }), init_video("#dapulse-landing-vid", "/assets/img/landings/bgvideo.mp4", "/assets/img/landings/bgvideo.ogv"), c = function() {
+    }), init_video("#elektropay-landing-vid", "https://res.cloudinary.com/lmj6rf6tz/video/upload/v1485753095/busy-escalator_od3zfj.mp4", "https://res.cloudinary.com/lmj6rf6tz/video/upload/v1485753095/busy-escalator_od3zfj.ogv"), c = function() {
         return $(".testimonials-carousel-half").slick({
             dots: !0,
             autoplay: !1,
