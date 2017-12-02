@@ -6,12 +6,6 @@ date: 2017-02-01
 publishdate: 2017-02-01
 lastmod: 2017-02-01
 type: contact
-[menu]
-     [menu.main]
-        name = "Contact"
-        weight = 4
-        identifier = "contact"
-    weight: 1
 weight: 1
 draft: false
 aliases: [/contact-us/,/contact/]
