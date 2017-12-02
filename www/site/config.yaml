@@ -3,6 +3,19 @@ languageCode: "en-us"
 title: "Elektropay"
 disable404: true
 pluralizeListTitles: false
+---
+menu:
+  docs:
+      - Name: "contact"
+        Pre: "<i class='fa fa-heart'></i>"
+        Weight: -110
+        Identifier: "contact"
+        URL: "/contact/"
+      - Name: "pricing"
+        Pre: "<i class='fa fa-road'></i>"
+        Identifier: "pricing"
+        Weight: -100
+        URL: "/pricing/"
+---
+
 metaDataFormat: "yaml"
-
-
