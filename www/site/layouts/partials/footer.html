@@ -369,6 +369,28 @@
   <p class="contained">Distributed under <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE" class="text-link">MIT License</a>.</p>
 </footer>
 
+<!--[if IE 8]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ie8/0.2.5/ie8.js"></script>
+  <![endif]-->
+
+  <!--[if lte IE 9]>
+  <script src="https://cdn.auth0.com/js/base64.js"></script>
+  <script src="https://cdn.auth0.com/js/es5-shim.min.js"></script>
+  <![endif]-->
+
+<!--[if lt IE 9]>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<![endif]--> 
+<!--[if (IE 9) | (gte IE 9) | (!IE)]>
+<!--> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<!--<![endif]--> 
+<script>window.jQuery || document.write('<script src="/jquery-1f722466.js"><\/script>')</script> 
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<!-- App JavaScript -->
 <script src="https://cdn.everpayinc.com/elektropay/assets/js/elektropay.js"></script>
 <script src="/prism.js"></script>
 <script src="/app.js"></script>
@@ -430,11 +452,6 @@
   return callback(new Error(msg));
 }
 </script>
-
-   <!--[if lt IE 9]>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-        <script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
 
 
 
