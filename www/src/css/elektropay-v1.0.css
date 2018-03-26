@@ -2484,7 +2484,7 @@ html * {
 .featureset .row{margin:0;padding:0}
 .featureset .col1of3,.featureset .col1of2,.featureset .col3of4,.featureset .col3of5,.featureset .col2of5{float:none;width:100%;margin-bottom:30px;padding:0}}
 
-.navbar{box-sizing:border-box;font-size:14px;max-width:980px;margin:0 auto 0px auto}
+.navbar{box-sizing:border-box;font-size:14px;margin:0 auto 0px auto}
 .navbar .header{padding:0 20px}
 .navbar .header .logo{display:inline-block;padding:7.5px 0 5px 0;width:150px}
 .navbar .header .toggle{display:none;float:right;width:20px;height:30px;margin:16px 20px;cursor:pointer}
