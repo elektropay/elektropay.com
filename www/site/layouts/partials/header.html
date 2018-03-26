@@ -43,7 +43,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
   
 <header id="header">    
 <!-- Fixed navbar -->
-	<nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar navbar-default header clearfix">
+	<nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar clearfix">
 		<div class="navbar__container container">
 		<div class="navbar__header">
             <button type="button" v-bind:class="{ 'ctablet--extended': isActive }" v-on:click="closeNavigation" class="ctablet">
@@ -57,7 +57,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                 <span class="hamburger__bar hamburger__bar--second"></span>
             </button>
             <a class="monese-logo" href="/">
-		<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png"/>
+		<img class="monese-logo__icon" src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png"/>
                 <svg class="hidden monese-logo__icon">
                     <use xlink:href="#icon-logo" />
                 </svg> 
