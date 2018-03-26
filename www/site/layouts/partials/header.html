@@ -45,7 +45,28 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 <!-- Fixed navbar -->
 	<nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar navbar-default header clearfix">
 		<div class="navbar__container container">
-			<div class="navbar-header">
+		<div class="navbar__header">
+            <button type="button" v-bind:class="{ 'ctablet--extended': isActive }" v-on:click="closeNavigation" class="ctablet">
+                <svg class="ctablet__arrow btn__arrow arrow">
+                    <use xlink:href="#icon-arrow" />
+                </svg>
+            </button>
+            <button type="button" v-bind:class="{ 'hamburger--extended': isActive }" v-on:click="toggle" class="hamburger">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar hamburger__bar--second"></span>
+            </button>
+            <a class="monese-logo" href="/">
+		<img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1497453042/elektropay/assets/img/logo.png"/>
+                <svg class="hidden monese-logo__icon">
+                    <use xlink:href="#icon-logo" />
+                </svg> 
+                <svg class="hidden monese-logo__text">
+                    <use xlink:href="#icon-logo-text" />
+                </svg>
+            </a>
+			
+			<div class="navbar-header hidden">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
