@@ -66,7 +66,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
                     <use xlink:href="#icon-logo-text" />
                 </svg>
             </a>
-			<button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
+	<button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
                 <span class="region__flag">
                     <svg class="language__flag language__flag--region language__flag--pin">
                         <use xlink:href="#icon-pin" />
@@ -206,8 +206,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 	<div v-bind:class="{ 'subnavbar--extended': isActive, 'subnavbar--over': isOverActive }" class="subnavbar">
             <ul v-bind:class="{ 'subnavbar__nav--dropdown': dropdownIsActive }" class="subnavbar__ul">
                     {{ range .Site.Menus.main }}
-                    <li v-bind:class="{ 'subnavbar__li--active': isOverFeaturesActive }" {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="subnavbar__li"{{ end }}>
-                        <a v-bind:class="{ 'subnavbar__item--tactive': isOverFeaturesActive }" v-on:click="openOverMenus('features', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="{{ .URL }}">{{ .Name }}</a>
+                    <li {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} class="subnavbar__li"{{ end }}>
+                        <a class="subnavbar__item" href="{{ .URL }}">{{ .Name }}</a>
                     </li>
                     {{ end }}
                 </ul>
