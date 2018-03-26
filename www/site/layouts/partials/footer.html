@@ -320,11 +320,31 @@
 </footer>
 <!-- App JavaScript -->
 <script src="/elektropay-all.js"></script>
-<script src="/elektro-index.js"></script>
-<script src="/prism.js"></script>
-<script src="/app.js"></script>
+<script src="/js/elektro-index.js"></script>
+<script src="/js/prism.js"></script>
+<script src="/js/app.js"></script>
 <script src="/240460503.js"></script>
 
+<script src="/js/main-ce0aec80fc.min.js" async></script>
+    
+            
+<noscript id="deferred-styles">
+ <link rel="stylesheet" type="text/css" href="/css/main-6dc71ad223.min.css"/>
+ </noscript>
+
+            <script>
+              var loadDeferredStyles = function() {
+                var addStylesNode = document.getElementById("deferred-styles");
+                var replacement = document.createElement("div");
+                replacement.innerHTML = addStylesNode.textContent;
+                document.body.appendChild(replacement)
+                addStylesNode.parentElement.removeChild(addStylesNode);
+              };
+              var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                  webkitRequestAnimationFrame || msRequestAnimationFrame;
+              if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+              else window.addEventListener('load', loadDeferredStyles);
+            </script>
  <script src="https://cdn.auth0.com/js/lock/10.11/lock.min.js"></script>
   <script>
     // Decode utf8 characters properly
