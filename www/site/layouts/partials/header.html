@@ -81,9 +81,9 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 .elektro-logo {
     left: auto;
     margin-left: 0;
-    padding-top: 0.95em;
+    padding-top: 0.85em;
     float: left;
-    margin-top: -16px!important;
+    margin-top: -20px!important;
     width: 170px!important;
 }
 .elektro-logo__icon {
@@ -107,7 +107,7 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
   
 <header id="header">    
 <!-- Fixed navbar -->
-	<nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar clearfix">
+	<nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar">
 		<div class="navbar__container container">
 		<div class="navbar__header">
             <button type="button" v-bind:class="{ 'ctablet--extended': isActive }" v-on:click="closeNavigation" class="ctablet">
