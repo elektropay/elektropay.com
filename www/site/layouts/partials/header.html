@@ -43,8 +43,8 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
   
 <header id="header">    
 <!-- Fixed navbar -->
-	<nav  v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar navbar-default header clearfix">
-		<div class="contained">
+	<nav v-on:mouseleave="highlightActiveItem" v-bind:style="{ height: windowHeight + 'px' }" v-bind:class="{ 'navbar--active': isActive }" class="navbar navbar-default header clearfix">
+		<div class="navbar__container container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
