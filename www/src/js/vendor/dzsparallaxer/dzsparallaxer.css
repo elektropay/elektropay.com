@@ -1,0 +1,224 @@
+@-webkit-keyframes keyframes-rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+@keyframes keyframes-rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+.dzsparallaxer {
+  height: 300px;
+  overflow: hidden;
+  background-color: #1c1a17;
+  position: relative;
+  transition-property: height;
+  transition-duration: 0.3s;
+  -moz-transition-property: height;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-property: height;
+  -o-transition-duration: 0.3s;
+  -ms-transition-property: height;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out-quart;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .dzsparallaxer .dzsparallaxer--target {
+    position: relative; }
+  .dzsparallaxer .dzsparallaxer--blackoverlay {
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  .dzsparallaxer .big-text {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 300;
+    top: 70px;
+    color: #eee;
+    line-height: 1.5;
+    font-style: italic;
+    opacity: 0.7; }
+    .dzsparallaxer .big-text .smaller {
+      font-size: 60%; }
+  .dzsparallaxer .center-it {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); }
+
+.dzsparallaxer.use-loading .dzsparallaxer--target {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.7s;
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 0.7s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 0.7s;
+  -ms-transition-property: opacity;
+  -ms-transition-duration: 0.7s;
+  -ms-transition-timing-function: ease-out-quart;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); }
+.dzsparallaxer.use-loading .preloader-semicircles {
+  transition-property: all;
+  transition-duration: 0.3s;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.3s;
+  -ms-transition-property: all;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out-quart;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.dzsparallaxer.use-loading.loaded .dzsparallaxer--target {
+  opacity: 1; }
+.dzsparallaxer.use-loading.loaded .preloader-semicircles {
+  transform: translate3d(0, -50px, 0);
+  opacity: 0;
+  visibility: hidden; }
+
+.dzsparallaxer.allbody {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+.divimage {
+  background-size: cover;
+  background-position: center center; }
+
+.dzsparallaxer.simple-parallax {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .dzsparallaxer.simple-parallax .simple-parallax-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, auto, auto, 0); }
+  .dzsparallaxer.simple-parallax .dzsparallaxer--target {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden; }
+
+.semi-black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.6)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#99000000',GradientType=0 ); }
+
+@-webkit-keyframes preloader-semicircles-tween {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+@keyframes preloader-semicircles-tween {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+.preloader-semicircles {
+  width: 15px;
+  height: 15px;
+  background: rgba(230, 50, 50, 0.9);
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+  margin-left: -15px;
+  margin-right: -15px;
+  animation: preloader-semicircles-tween 1.4s infinite linear;
+  -webkit-animation: preloader-semicircles-tween 1.4s infinite linear; }
+
+.preloader-semicircles:after {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #c83232;
+  border-bottom: 5px solid #c83232;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-radius: 25px;
+  content: '';
+  top: -10px;
+  left: -10px;
+  box-sizing: content-box; }
+
+.center-it {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
