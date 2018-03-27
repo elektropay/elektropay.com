@@ -752,6 +752,7 @@ section {
                 </svg>
             </a>
         
+          
             <button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
                 <span class="region__flag">
                     <svg class="language__flag language__flag--region language__flag--pin">
@@ -766,11 +767,11 @@ section {
                 <svg v-bind:class="{ 'language__arrow--active': isRegionActive }" class="language__arrow btn__arrow arrow language__arrow--region">
                     <use xlink:href="#icon-arrow" />
                 </svg>
-            </button>  
-       	<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/claim-account">Get started</a>
-       	    </div>
-	    
-<div v-bind:style="{ height: regionHeight + 'px' }" class="sublanguage sublanguage--header sublanguage--region" v-bind:class="{ 'sublanguage--extended': isRegionActive }">
+            </button>
+
+            <a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="free-trial-account.html">Sign up now</a>
+        </div>
+        <div v-bind:style="{ height: regionHeight + 'px' }" class="sublanguage sublanguage--header sublanguage--region" v-bind:class="{ 'sublanguage--extended': isRegionActive }">
             <div class="sublanguage__scroll">
 
                 <div class="sublanguage--language">
@@ -878,22 +879,13 @@ section {
 
             </div>
         </div>
-   
 
         <div v-bind:class="{ 'subnavbar--extended': isActive, 'subnavbar--over': isOverActive }" class="subnavbar">
             <ul v-bind:class="{ 'subnavbar__nav--dropdown': dropdownIsActive }" class="subnavbar__ul">
                 <li v-bind:class="{ 'subnavbar__li--active': isOverFeaturesActive }" class="subnavbar__li">
-                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverFeaturesActive }" v-on:click="openOverMenus('consumers', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="features.html">
-                        Consumers
+                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverFeaturesActive }" v-on:click="openOverMenus('features', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="features.html">
+                        Features
                         <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverFeaturesActive }" class="arrow subnavbar__arrow">
-                            <use xlink:href="#icon-arrow" />
-                        </svg>
-                    </a>
-                </li>
-		    <li v-bind:class="{ 'subnavbar__li--active': isOverBusinesssActive }" class="subnavbar__li">
-                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverBusinessActive }" v-on:click="openOverMenus('business', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="features.html">
-                        Business
-                        <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverBusinessActive }" class="arrow subnavbar__arrow">
                             <use xlink:href="#icon-arrow" />
                         </svg>
                     </a>
@@ -907,7 +899,7 @@ section {
                     </a>
                 </li>
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="travel-money-card/">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="travel-money-card.html">
                         Travel
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
@@ -915,7 +907,7 @@ section {
                     </a>
                 </li>
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/pricing">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="pricing.html">
                         Pricing
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
@@ -947,25 +939,9 @@ section {
                     </a>
                 </li>
             </ul>
-		
-            <button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
-                <span class="region__flag">
-                    <svg class="language__flag language__flag--region language__flag--pin">
-                        <use xlink:href="#icon-pin" />
-                    </svg>
-                </span>
-                <span class="region__text">
-                                            UK
-                    
-                                        <span class="region__span">(EN)</span>
-                                    </span>
-                <svg v-bind:class="{ 'language__arrow--active': isRegionActive }" class="language__arrow btn__arrow arrow language__arrow--region">
-                    <use xlink:href="#icon-arrow" />
-                </svg>
-            </button>
 
             <div class="subnavbar__li--cta">
-                <a class="btn subnavbar__btn btn--one" href="/free-trial-account">Sign up now
+                <a class="btn subnavbar__btn btn--one" href="free-trial-account.html">Sign up now
                     <svg class="btn__arrow arrow">
                         <use xlink:href="#icon-arrow" />
                     </svg>
@@ -980,7 +956,7 @@ section {
 
                     <ul class="sublanguage__ul sublanguage__ul--region">
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/bg/index.html">
+                            <a class="sublanguage__a" href="gb/bg/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagbg" />
                                 </svg>
@@ -988,7 +964,7 @@ section {
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/de/index">
+                            <a class="sublanguage__a" href="gb/de/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagde" />
                                 </svg>
@@ -998,7 +974,7 @@ section {
                         <li class="sublanguage__li">
 
                                                                                                                     
-                            <a class="sublanguage__a" href="/">
+                            <a class="sublanguage__a" href="index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagen" />
                                 </svg>
@@ -1006,7 +982,7 @@ section {
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/es/">
+                            <a class="sublanguage__a" href="gb/es/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flages" />
                                 </svg>
@@ -1014,7 +990,7 @@ section {
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/fr/">
+                            <a class="sublanguage__a" href="gb/fr/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagfr" />
                                 </svg>
@@ -1022,7 +998,7 @@ section {
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/it/">
+                            <a class="sublanguage__a" href="gb/it/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagit" />
                                 </svg>
@@ -1030,7 +1006,7 @@ section {
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/pt_br/">
+                            <a class="sublanguage__a" href="gb/pt_br/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagpt_br" />
                                 </svg>
@@ -1038,7 +1014,7 @@ section {
                             </a>
                         </li>
                         <li class="sublanguage__li">
-                            <a class="sublanguage__a" href="/gb/ro/">
+                            <a class="sublanguage__a" href="gb/ro/index.html">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagro" />
                                 </svg>
@@ -1054,7 +1030,7 @@ section {
                 <div class="sublanguage--region">
 
                                                                                     
-                    <a class="sublanguage__selection" href="/eu/">
+                    <a class="sublanguage__selection" href="eu/index.html">
                         <span class="sublanguage__selection--flag">
                             <svg class="language__flag language__flag--left">
                                 <use xlink:href="#icon-flageu" />
@@ -1089,7 +1065,7 @@ section {
     
     
 <div v-bind:class="{ 'overmenu--active': isOverTransferActive }" class="overmenu overmenu--transfers">
-    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1101,25 +1077,25 @@ section {
 
             <ul class="sublanguage__ul overmenu__ul--transfers">
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-bulgaria">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-bulgaria.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_bulgaria_17dp.svg">
                         Bulgaria
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-hungary">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-hungary.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_hungary_17dp.svg">
                         Hungary
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-italy">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-italy.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_italy_17dp.svg">
                         Italy
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-romania">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-romania.html">
                         <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_romania_17dp.svg">
                         Romania
                     </a>
@@ -1131,14 +1107,14 @@ section {
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/transfer-money-to-spain">
-                        <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.elektropay.com/s/flags-2/flag_spain_17dp.svg">
+                    <a class="sublanguage__a" href="international-money-transfer/transfer-money-to-spain.html">
+                        <img class="language__flag language__flag--left" class="search-country__flag" src="https://static.monese.com/s/flags-2/flag_spain_17dp.svg">
                         Spain
                     </a>
                 </li>
             </ul>
 
-            <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/international-money-transfer#countries">
+            <a class="subnavbar__item overmenu__item overmenu__item--features"  href="international-money-transfer.html#countries">
                 <svg class="overmenu__svg">
                     <use xlink:href="#icon-nworld" />
                 </svg>
@@ -1156,27 +1132,27 @@ section {
         
             <ul class="sublanguage__ul overmenu__ul--transfers">
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-eur">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-eur.html">
                         <span class="overmenu__span--currency">&#8364;</span> EUR
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-usd">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-usd.html">
                         <span class="overmenu__span--currency">&#36;</span> USD
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-bgn">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-bgn.html">
                         <span class="overmenu__span--currency">&#1083;&#1074;</span> BGN
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-ron">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-ron.html">
                         <span class="overmenu__span--currency">&#108;&#101;&#105;</span> RON
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="/international-money-transfer/gbp-to-pln">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-pln.html">
                         <span class="overmenu__span--currency">&#122;&#322;</span> PLN
                     </a>
                 </li>
@@ -1184,7 +1160,7 @@ section {
 
                 </div>
 
-        <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/international-money-transfer#currencies">
+        <a class="subnavbar__item overmenu__item overmenu__item--features"  href="international-money-transfer.html#currencies">
             <svg class="overmenu__svg">
                 <use xlink:href="#icon-ncurrencies" />
             </svg>
@@ -1198,9 +1174,8 @@ section {
     </div>
 </div>
     
-	
 <div v-bind:class="{ 'overmenu--active': isOverFeaturesActive }" class="overmenu overmenu--features">
-    <a v-on:click="closeOverMenus" href="#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1209,7 +1184,7 @@ section {
     <div class="overmenu__list overmenu__list--features">
         <ul class="overmenu__ul">
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/instant-account">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/instant-account.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-naccount" />
                     </svg>
@@ -1221,7 +1196,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/debit-card">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/debit-card.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-ncard" />
                     </svg>
@@ -1233,7 +1208,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/budgeting">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/budgeting.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-nbudgeting" />
                     </svg>
@@ -1245,7 +1220,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/deposits/">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/deposits.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-ndeposits" />
                     </svg>
@@ -1257,7 +1232,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/payments">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/payments.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-npayments" />
                     </svg>
@@ -1269,7 +1244,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/security">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/security.html">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-nsecurity" />
                     </svg>
@@ -1282,11 +1257,9 @@ section {
             </li>
         </ul>
     </div>
-</div>    	
-	
-	
+</div>    
 <div v-bind:class="{ 'overmenu--active': isOverHelpActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1295,7 +1268,7 @@ section {
     <div class="overmenu__list overmenu__list--help">
         <ul class="overmenu__ul overmenu__ul--help">
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb">
                     FAQs
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1303,7 +1276,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387109-Monese">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387109-Monese">
                     General
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1311,7 +1284,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387129-Account">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387129-Account">
                     Accounts
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1319,7 +1292,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387149-Deposits">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387149-Deposits">
                     Deposits
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1327,7 +1300,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000394165-Payments">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394165-Payments">
                     Payments
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1335,7 +1308,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000394185-Card">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000394185-Card">
                     Card
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1343,7 +1316,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387169-Pricing">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387169-Pricing">
                     Pricing
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1351,7 +1324,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.elektropay.com/hc/en-gb/categories/115000387189-Security">
+                <a class="subnavbar__item overmenu__item overmenu__item--help"  href="https://support.monese.com/hc/en-gb/categories/115000387189-Security">
                 Security
                     <svg class="arrow subnavbar__arrow subnavbar__arrow--help">
                         <use xlink:href="#icon-arrow" />
@@ -1362,7 +1335,7 @@ section {
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverCompanyActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1372,7 +1345,7 @@ section {
         <ul class="overmenu__ul">
 
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/about">
+                <a class="subnavbar__item overmenu__item"  href="about.html">
                     About
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1380,7 +1353,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="https://status.elektropay.com">
+                <a class="subnavbar__item overmenu__item"  href="https://monese.statuspage.io">
                     Service Status
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1388,7 +1361,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="https://elektropay.workable.com">
+                <a class="subnavbar__item overmenu__item"  href="https://monese.workable.com">
                     Careers
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1404,7 +1377,7 @@ section {
                 </a>
             </li>
                         <li>
-                <a class="subnavbar__item overmenu__item"  href="/media">
+                <a class="subnavbar__item overmenu__item"  href="media.html">
                     Media
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1412,7 +1385,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/terms">
+                <a class="subnavbar__item overmenu__item"  href="terms.html">
                     Terms
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1420,7 +1393,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/privacy">
+                <a class="subnavbar__item overmenu__item"  href="privacy.html">
                      Privacy
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1428,7 +1401,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/cookies">
+                <a class="subnavbar__item overmenu__item"  href="cookies.html">
                     Cookies
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1439,7 +1412,7 @@ section {
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverCustomersActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1448,7 +1421,7 @@ section {
     <div class="overmenu__list">
         <ul class="overmenu__ul">
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers">
+                <a class="subnavbar__item overmenu__item"  href="customers.html">
                     All customers
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1456,7 +1429,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/expats">
+                <a class="subnavbar__item overmenu__item"  href="customers/expats.html">
                     Expats
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1464,7 +1437,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/freelancers">
+                <a class="subnavbar__item overmenu__item"  href="customers/freelancers.html">
                     Freelancers
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1472,7 +1445,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/foreign-nationals.html">
+                <a class="subnavbar__item overmenu__item"  href="customers/foreign-nationals.html">
                     Foreign Nationals
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1480,7 +1453,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/basic-account">
+                <a class="subnavbar__item overmenu__item"  href="customers/basic-account.html">
                     Basic Account
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1488,7 +1461,7 @@ section {
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item"  href="/customers/no-proof-of-address">
+                <a class="subnavbar__item overmenu__item"  href="customers/no-proof-of-address.html">
                     No proof of address
                     <svg class="arrow subnavbar__arrow">
                         <use xlink:href="#icon-arrow" />
@@ -1497,7 +1470,7 @@ section {
             </li>
         </ul>
     </div>
-</div>    
+</div>  
 <div v-bind:class="{ 'desktopsub--active': isOverTransferActive || isOverFeaturesActive }" class="desktopsub">
     <div class="desktopsub__col desktopsub__col--first">
         <h3 class="desktopsub__h3">Company</h3>
