@@ -150,11 +150,13 @@ h1, h2, h3, h4, h5 {
 
 .navbar__highlight {
     background-color: #92CAE6!important;
-    display: block;
-    position: fixed;
-    top: 4.9175em!important;
 }
 
+.overmenu__ul {
+    -webkit-column-count: 2;
+    column-count: 2;
+    display: inline;
+}
 .navbar__container {
     height: 78px;
 }
@@ -1504,7 +1506,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverCompanyActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1553,35 +1555,11 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                     </svg>
                 </a>
             </li>
-            <li>
-                <a class="subnavbar__item overmenu__item"  href="/terms">
-                    Terms
-                    <svg class="arrow subnavbar__arrow">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item"  href="/privacy">
-                     Privacy
-                    <svg class="arrow subnavbar__arrow">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="subnavbar__item overmenu__item"  href="/cookies">
-                    Cookies
-                    <svg class="arrow subnavbar__arrow">
-                        <use xlink:href="#icon-arrow" />
-                    </svg>
-                </a>
-            </li>
         </ul>
     </div>
 </div>    
 <div v-bind:class="{ 'overmenu--active': isOverCustomersActive }" class="overmenu overmenu--help">
-    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
