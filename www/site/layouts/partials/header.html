@@ -751,11 +751,134 @@ section {
                     <use xlink:href="#icon-logo-text" />
                 </svg>
             </a>
-          
         
-	<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/claim-account">Get started</a>
-       
-	    </div>
+            <button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
+                <span class="region__flag">
+                    <svg class="language__flag language__flag--region language__flag--pin">
+                        <use xlink:href="#icon-pin" />
+                    </svg>
+                </span>
+                <span class="region__text">
+                                            UK
+                    
+                                        <span class="region__span">(EN)</span>
+                                    </span>
+                <svg v-bind:class="{ 'language__arrow--active': isRegionActive }" class="language__arrow btn__arrow arrow language__arrow--region">
+                    <use xlink:href="#icon-arrow" />
+                </svg>
+            </button>  
+       	<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/claim-account">Get started</a>
+       	    </div>
+	    
+<div v-bind:style="{ height: regionHeight + 'px' }" class="sublanguage sublanguage--header sublanguage--region" v-bind:class="{ 'sublanguage--extended': isRegionActive }">
+            <div class="sublanguage__scroll">
+
+                <div class="sublanguage--language">
+                    <h2 class="sublanguage__h2 sublanguage__h2--region">Select a language</h2>
+
+                    <ul class="sublanguage__ul sublanguage__ul--region">
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/bg/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagbg" />
+                                </svg>
+                                български
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/de/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagde" />
+                                </svg>
+                                Deutsch
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+
+                                                                                                                    
+                            <a class="sublanguage__a" href="index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagen" />
+                                </svg>
+                                English
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/es/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flages" />
+                                </svg>
+                                Español
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/fr/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagfr" />
+                                </svg>
+                                Français
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/it/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagit" />
+                                </svg>
+                                Italiano
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/pt_br/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagpt_br" />
+                                </svg>
+                                Português
+                            </a>
+                        </li>
+                        <li class="sublanguage__li">
+                            <a class="sublanguage__a" href="gb/ro/index.html%3Fl=c.html">
+                                <svg class="language__flag language__flag--left">
+                                    <use xlink:href="#icon-flagro" />
+                                </svg>
+                                Română
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sublanguage--region">
+
+                                                                                    
+                    <a class="sublanguage__selection" href="eu/index.html">
+                        <span class="sublanguage__selection--flag">
+                            <svg class="language__flag language__flag--left">
+                                <use xlink:href="#icon-flageu" />
+                            </svg>
+                        </span>
+                        <span class="sublanguage__selection--title">Eurozone</span>
+                        <span class="sublanguage__selection--copy">Banking in The EU?</span>
+                        <svg class="arrow subnavbar__arrow subnavbar__arrow--region">
+                            <use xlink:href="#icon-arrow" />
+                        </svg>
+                    </a>
+
+                                                                                    
+                    <a v-on:click="switchRegion('gb');" class="sublanguage__selection sublanguage__selection--last sublanguage__selection--active" href="index.html">
+                        <span class="sublanguage__selection--flag">
+                            <svg class="language__flag language__flag--left">
+                                <use xlink:href="#icon-flagen" />
+                            </svg>
+                        </span>
+                        <span class="sublanguage__selection--title">UK</span>
+                        <span class="sublanguage__selection--copy">Banking in The UK?</span>
+                        <svg class="arrow subnavbar__arrow  subnavbar__arrow--region">
+                            <use xlink:href="#icon-arrow" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+   
 
         <div v-bind:class="{ 'subnavbar--extended': isActive, 'subnavbar--over': isOverActive }" class="subnavbar">
             <ul v-bind:class="{ 'subnavbar__nav--dropdown': dropdownIsActive }" class="subnavbar__ul">
@@ -824,6 +947,22 @@ section {
                     </a>
                 </li>
             </ul>
+		
+            <button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
+                <span class="region__flag">
+                    <svg class="language__flag language__flag--region language__flag--pin">
+                        <use xlink:href="#icon-pin" />
+                    </svg>
+                </span>
+                <span class="region__text">
+                                            UK
+                    
+                                        <span class="region__span">(EN)</span>
+                                    </span>
+                <svg v-bind:class="{ 'language__arrow--active': isRegionActive }" class="language__arrow btn__arrow arrow language__arrow--region">
+                    <use xlink:href="#icon-arrow" />
+                </svg>
+            </button>
 
             <div class="subnavbar__li--cta">
                 <a class="btn subnavbar__btn btn--one" href="/free-trial-account">Sign up now
@@ -1389,9 +1528,11 @@ section {
         </ul>
     </div>
 </div>
-    <div v-bind:style="{ left: highlightLeft + 'px', width: highlightWidth + 'px' }" v-bind:class="{ 'navbar__highlight--active': highlightActive }" class="navbar__highlight"></div>
+
+<div v-bind:style="{ left: highlightLeft + 'px', width: highlightWidth + 'px' }" v-bind:class="{ 'navbar__highlight--active': highlightActive }" class="navbar__highlight"></div>
+
 </nav>   
-    </div>	
+
 <div class="wrapper ncontainer">
 	
   
