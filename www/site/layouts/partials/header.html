@@ -1047,7 +1047,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                     </a>
                 </li>
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="travel-money-card.html">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/travel-money-card/">
                         Travel
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
@@ -1055,29 +1055,30 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                     </a>
                 </li>
                 <li class="subnavbar__li">
-                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="pricing.html">
+                    <a v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/pricing">
                         Pricing
                         <svg class="arrow subnavbar__arrow subnavbar__arrow--hidedt">
                             <use xlink:href="#icon-arrow" />
                         </svg>
                     </a>
                 </li>
-                <li v-bind:class="{ 'subnavbar__li--active': isOverHelpActive }" class="subnavbar__li subnavbar__li--last">
-                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverHelpActive }" v-on:click="openOverMenus('help', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="https://support.monese.com/hc/en-gb">
-                        Help
-                        <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverHelpActive }" class="arrow subnavbar__arrow">
-                            <use xlink:href="#icon-arrow" />
-                        </svg>
-                    </a>
-                </li>
-                <li v-bind:class="{ 'subnavbar__li--active': isOverCompanyActive }" class="subnavbar__li subnavbar__li--hide">
-                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverCompanyActive }" v-on:click="openOverMenus('company', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="about.html">
+		<li v-bind:class="{ 'subnavbar__li--active': isOverCompanyActive }" class="subnavbar__li">
+                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverCompanyActive }" v-on:click="openOverMenus('company', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="/about">
                         Company
                         <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverCompanyActive }" class="arrow subnavbar__arrow">
                             <use xlink:href="#icon-arrow" />
                         </svg>
                     </a>
                 </li>
+                <li v-bind:class="{ 'subnavbar__li--active': isOverHelpActive }" class="subnavbar__li subnavbar__li--last">
+                    <a v-bind:class="{ 'subnavbar__item--tactive': isOverHelpActive }" v-on:click="openOverMenus('help', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="https://support.elektropay.com/hc/en-gb">
+                        Help
+                        <svg v-bind:class="{ 'subnavbar__arrow--tactive': isOverHelpActive }" class="arrow subnavbar__arrow">
+                            <use xlink:href="#icon-arrow" />
+                        </svg>
+                    </a>
+                </li>
+
                 <li v-bind:class="{ 'subnavbar__li--active': isOverCustomersActive }" class="subnavbar__li subnavbar__li--hide">
                     <a v-bind:class="{ 'subnavbar__item--tactive': isOverCustomersActive }" v-on:click="openOverMenus('customers', $event)" v-on:mouseover="mouseOverHighlight" class="subnavbar__item " href="customers.html">
                         Customers
@@ -1122,7 +1123,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                         <li class="sublanguage__li">
 
                                                                                                                     
-                            <a class="sublanguage__a" href="index.html">
+                            <a class="sublanguage__a" href="/">
                                 <svg class="language__flag language__flag--left">
                                     <use xlink:href="#icon-flagen" />
                                 </svg>
@@ -1213,7 +1214,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
     
     
 <div v-bind:class="{ 'overmenu--active': isOverTransferActive }" class="overmenu overmenu--transfers">
-    <a v-on:click="closeOverMenus" href="index.html#" class="overmenu__header">
+    <a v-on:click="closeOverMenus" href="/#" class="overmenu__header">
         <svg class="arrow overmenu__arrow">
             <use xlink:href="#icon-arrow" />
         </svg>
@@ -1300,7 +1301,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                     </a>
                 </li>
                 <li class="sublanguage__li">
-                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-pln.html">
+                    <a class="sublanguage__a" href="international-money-transfer/gbp-to-pln">
                         <span class="overmenu__span--currency">&#122;&#322;</span> PLN
                     </a>
                 </li>
@@ -1308,7 +1309,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
 
                 </div>
 
-        <a class="subnavbar__item overmenu__item overmenu__item--features"  href="international-money-transfer.html#currencies">
+        <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/international-money-transfer/#currencies">
             <svg class="overmenu__svg">
                 <use xlink:href="#icon-ncurrencies" />
             </svg>
@@ -1332,7 +1333,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
     <div class="overmenu__list overmenu__list--features">
         <ul class="overmenu__ul">
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/instant-account.html">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/instant-account/">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-naccount" />
                     </svg>
@@ -1344,7 +1345,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/debit-card.html">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/debit-card">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-ncard" />
                     </svg>
@@ -1356,7 +1357,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/budgeting.html">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/budgeting">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-nbudgeting" />
                     </svg>
@@ -1367,8 +1368,10 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                     </svg>
                 </a>
             </li>
-            <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/deposits.html">
+		
+		
+            <li>  
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/deposits">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-ndeposits" />
                     </svg>
@@ -1380,7 +1383,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/payments.html">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/payments">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-npayments" />
                     </svg>
@@ -1392,7 +1395,7 @@ button:hover,.button:hover{text-decoration:none;background-color:transparent!imp
                 </a>
             </li>
             <li>
-                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="features/security.html">
+                <a class="subnavbar__item overmenu__item overmenu__item--features"  href="/features/security">
                     <svg class="overmenu__svg">
                         <use xlink:href="#icon-nsecurity" />
                     </svg>
