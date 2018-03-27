@@ -738,6 +738,10 @@ section {
                 </svg>
             </a>
 
+	<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--two btn-round user-login" href="/user-login/"> <svg class="language__flag language__flag--region language__flag--pin">
+                        <use xlink:href="#icon-pin" />
+                    </svg></a>
+           
             <button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
                 <span class="region__flag">
                     <svg class="language__flag language__flag--region language__flag--pin">
@@ -752,8 +756,8 @@ section {
                     <use xlink:href="#icon-arrow" />
                 </svg>
             </button>
- <a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--two btn-round user-login" href="/user-login/">login</a>
-            <a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/free-trial-account">Sign up now</a>
+ 
+		<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--one sign-up-free" href="/free-trial-account">Sign up now</a>
        
 	    </div>
         <div v-bind:style="{ height: regionHeight + 'px' }" class="sublanguage sublanguage--header sublanguage--region" v-bind:class="{ 'sublanguage--extended': isRegionActive }">
