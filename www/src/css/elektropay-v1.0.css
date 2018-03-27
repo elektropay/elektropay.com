@@ -2751,7 +2751,10 @@ a.btn-nav-secondary {
 
 .quote{padding:20px;font-size:20px;line-height:24px;font-style:italic;border:1px solid #68c19a;text-align:center;color:#68c19a}
 
-button,.button{display:inline-block;padding:15px 30px;border-radius:5px;border:0;color:#fff;font-size:16px;background-color:#00a2ff;cursor:pointer;outline:none;-webkit-transition:background-color 0.2s;transition:background-color 0.2s}button.fat,.button.fat{padding:22px 24px}button.disabled,button.disabled:hover,.button.disabled,.button.disabled:hover{background-color:#dbdbdb;color:#aaa;cursor:default}button:hover,.button:hover{color:#fff;text-decoration:none;background-color:rgba(0,162,255,0.8)}
+button,.button{display:inline-block;padding:15px 30px;border-radius:5px;border:0;cursor:pointer;outline:none;-webkit-transition:background-color 0.2s;transition:background-color 0.2s}
+	button.fat,.button.fat{padding:22px 24px}
+	button.disabled,button.disabled:hover,.button.disabled,.button.disabled:hover{background-color:#dbdbdb;color:#aaa;cursor:default}
+	button:hover,.button:hover{color:#fff;text-decoration:none;background-color:rgba(0,162,255,0.8)}
 
 .main-headline{background-color:#16a085;color:#fff;padding-top:5em;padding-bottom:5em}
 .main-headline h1{font-size:3.5em}
@@ -3466,12 +3469,7 @@ ul {
 a {
   color: #313D3E;
   text-decoration: none;
-  font-weight: 700;
-}
-
-ul {
-  margin: 5px 0 5px 6px;
-  padding: 0;
+  font-weight: normal;
 }
 
 .contained {
@@ -3491,7 +3489,7 @@ ul {
   border-radius: 4px;
   box-sizing: border-box;
   display: inline-block;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 700;
   margin: 0;
