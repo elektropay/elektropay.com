@@ -80,7 +80,6 @@
     <!-- Fonts  -->
 <link rel="stylesheet" href="https://fonticons-free-fonticons.netdna-ssl.com/kits/a97ca672/a97ca672.css"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/> 
 <link rel="stylesheet" href="/css/simple-line-icons.css"/>
@@ -688,7 +687,7 @@ section {
     font-size: .875em;
 	}
 	  </style>
-        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
   </head>
 <body class="page-loaded" style="">
  <div class="visually-hidden">
@@ -742,11 +741,9 @@ section {
                 </svg>
             </a>
 
-	<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--two btn-round btn btn--one sign-up-free--active" href="/user-login/">
-		
-		<svg class="language__flag--pin">
-                        <use xlink:href="#icon-pin" />
-                    </svg></a>
+	<a v-on:click="trackHeaderCTA" v-bind:class="{ 'sign-up-free--active': showCta }" class="btn btn--two btn-round user-login--active" href="/user-login/">
+	<i class="fal fa-chevron-circle-right"></i>
+		</a>
            
             <button type="button" v-bind:class="{ 'language--extended': isRegionActive, 'language--mextended': isActive  }" v-on:click="toggleRegion" class="language language--region">
                 <span class="region__flag">
