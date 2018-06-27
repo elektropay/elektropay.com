@@ -1,7 +1,7 @@
 {
-  "name": "victor-hugo",
+  "name": "Elektropay",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+  "description": "Elektropay is payments platform for creating truly frictionless payments!",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
