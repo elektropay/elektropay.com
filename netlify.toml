@@ -1,7 +1,7 @@
 [build]
   base = "www"
   command = "npm run build"
-  publish = "www/dist"
+  publish = "www/site"
 
 [context.deploy-preview]
   command = "npm run build-preview"
