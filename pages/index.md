@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome
+title: Payments Facilitator Platform
 permalink: /
 section: home
 intro_paragraph: >
