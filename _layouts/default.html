@@ -8,16 +8,28 @@ layout: compress
   {% include head.html %}
 
   <body>
-
+    
+        <div class="page-loader">
+            <div class="page-loader-inner">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    
     {% include header.html %}
 
-    <main>
+    <div class="wrapper">
 
-      {{ content }}
-
-    </main>
+     {{ content }}
 
     {% include footer.html %}
+
+    </div>
+    <!-- Wrapper end-->
+    
+   {% include footer-scripts.html %}
 
   </body>
 
