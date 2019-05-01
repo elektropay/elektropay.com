@@ -2,13 +2,9 @@
 
 - text: Start
   url: / 
+- text: Products
+  url: /products
 - text: Features
   url: /features
 - text: Pricing
   url: /pricing  
-- text: Company
-  url: /about
-- text: Contact
-  url: /contact
-- text: Blog
-  url: /blog
