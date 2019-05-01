@@ -1,16 +1,64 @@
-<!-- Hero-->
-            <section class="module-cover parallax fullscreen text-center" data-background="https://static.elektropay.com/assets/img/module-2.jpg" data-jarallax-video="https://www.youtube.com/watch?v=ARvle-Ei6Sw" data-overlay="0.7" data-gradient="1">
+<!-- <div class="owl-carousel clients-carousel" data-carousel-options="{'false': false}">
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/1.png" alt=""></div>
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/2.png" alt=""></div>
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/3.png" alt=""></div>
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/4.png" alt=""></div>
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/5.png" alt=""></div>
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/6.png" alt=""></div>
+   <div class="client"><img src="https://static.elektropay.com/assets/img/clients/7.png" alt=""></div>
+</div>-->
+
+<!-- <div class="hidden">
+{{ content }}
+</div>-->
+
+<section class="module">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>The Future of Commerce & <br> Payments is Here</strong></h1>
-                            <p class="m-b-40">Small businesses are at the very heart of the economy, so helping them optimise <br> new technologies to operate more efficiently and to focus on what they do best.</p>
-                            <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="/#">Learn More</a></p>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6"><img src="https://static.elektropay.com/assets/img/main/ipad.png" alt=""></div>
+                      
+                        <div class="col-lg-5 offset-lg-1">
+                            <h2>Scalable Commerce</h2>       
+                            {% if page.intro_paragraph and page.intro_paragraph != '' %}
+                  <p class="lead">{{ page.intro_paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                                        {% endif %}                
+                            <div class="space" data-my="40px" style="margin-top: 40px;"></div>
+                            <div class="icon-box icon-box-left">
+                                <div class="icon-box-icon"><span class="icon-layout"></span></div>
+                                <div class="icon-box-title">
+                                    <h6>Visual Composer</h6>
+                                </div>
+                                <div class="icon-box-content">
+                                    <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                                </div>
+                            </div>
+                            <div class="icon-box icon-box-left">
+                                <div class="icon-box-icon"><span class="icon-cup"></span></div>
+                                <div class="icon-box-title">
+                                    <h6>Revolution Slider</h6>
+                                </div>
+                                <div class="icon-box-content">
+                                    <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                                </div>
+                            </div>
+                            <div class="icon-box icon-box-left">
+                                <div class="icon-box-icon"><span class="icon-hard-drives"></span></div>
+                                <div class="icon-box-title">
+                                    <h6>User Experience</h6>
+                                </div>
+                                <div class="icon-box-content">
+                                    <p>Map where your photos were taken and discover local points of interest. Map where your photos. Map where your photos were taken and discover.</p>
+                                </div>
+                            </div>
+                           <div class="demo-btn m-auto text-center">
+                              <a class="btn btn-circle btn-brand" href="/features">Learn more</a> 
+                          </div>
+                          
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Hero end-->
+
 
 
 
