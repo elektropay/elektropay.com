@@ -12,7 +12,7 @@ layout: default
    <div class="client"><img src="https://static.elektropay.com/assets/img/clients/6.png" alt=""></div>
    <div class="client"><img src="https://static.elektropay.com/assets/img/clients/7.png" alt=""></div>
 </div>
-  {{ content }}
+
 <section class="module">
                 <div class="container">
                     <div class="row align-items-center">
@@ -22,7 +22,7 @@ layout: default
                             <p class="lead">This is the new frontier, this is the new ere of conducting commerce.</p>
                             <div class="space" data-my="50px" style="margin-top: 50px;"></div>
                             <div class="icon-box icon-box-left">
-                                <div class="icon-box-icon"><span class="ti-layout"></span></div>
+                                <div class="icon-box-icon"><span class="icon-layout"></span></div>
                                 <div class="icon-box-title">
                                     <h6>Visual Composer</h6>
                                 </div>
@@ -31,7 +31,7 @@ layout: default
                                 </div>
                             </div>
                             <div class="icon-box icon-box-left">
-                                <div class="icon-box-icon"><span class="ti-cup"></span></div>
+                                <div class="icon-box-icon"><span class="icon-cup"></span></div>
                                 <div class="icon-box-title">
                                     <h6>Revolution Slider</h6>
                                 </div>
@@ -40,7 +40,7 @@ layout: default
                                 </div>
                             </div>
                             <div class="icon-box icon-box-left">
-                                <div class="icon-box-icon"><span class="ti-hard-drives"></span></div>
+                                <div class="icon-box-icon"><span class="icon-hard-drives"></span></div>
                                 <div class="icon-box-title">
                                     <h6>User Experience</h6>
                                 </div>
@@ -52,6 +52,7 @@ layout: default
                     </div>
                 </div>
             </section>
+{{ content }}
 
    <!-- <section class="module">
                 <div class="container">
@@ -66,9 +67,11 @@ layout: default
                             <div class="space" data-my="60px" style="margin-top: 60px;"></div>
                         </div>
                     </div>
+
 <div class="row row-post-masonry" style="position: relative; height: 497.484px;">
       {% for post in site.posts limit:3 %} 
   <div class="col-md-4 post-item" style="position: absolute; top: 0px;">
+
 <article class="post">
    <div class="post-preview"><a href="{{ post.url }}"><img src="https://static.elektropay.com/assets/img/blog/1.jpg" alt=""></a></div>
                                 <div class="post-wrapper">
@@ -81,16 +84,16 @@ layout: default
                                     </div>
                                 </div> 
 </article>
-   <!-- Post end-->
+
    </div>
       {% endfor %}
 </div>
                 </div>
-            </section>--->
+            </section> --->
 
 
     <!-- Counters-->
-            <section class="module no-gutter3 p-b-2">
+            <section class="module no-gutter3 p-0">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
