@@ -12,4 +12,4 @@ intro_paragraph: |-
   flagged, will display a CAPTCHA challenge to the user.
 ---
 
-**Send us a message**
+*Send us a message*
