@@ -7,3 +7,16 @@
         <script src="https://static.elektropay.com/assets/js/site.min.js"></script>
         <script data-prerender="keep" async="" src="https://use.fortawesome.com/349cfdf6.js"></script>
         <link rel="stylesheet" href="https://fonticons-free-fonticons.netdna-ssl.com/kits/349cfdf6/publications/92668/woff2.css" media="all">
+<!-- local javascript functions -->
+  <script src="https://static.elektropay.com/assets/js/auth.js"></script>
+
+  <script>
+    renderButtonState();
+    $(document).ready(function () {
+      // show access token if user is logged in
+      if (Cookies.get('accessToken', { domain: cookieDomain })) {
+        $("#infoDiv").show();
+        $("#accessTokenDiv").text(Cookies.get('accessToken', { domain: cookieDomain }));
+      }
+    });
+  </script>
