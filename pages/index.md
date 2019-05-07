@@ -5,5 +5,5 @@ permalink: /
 section: home
 intro_paragraph: |
 Reliable Solutions For Every Transaction
-Elektropay also supports a vast range of billing models, devices, payment methods, gateways, and processors all through one single integration.
+Elektropay also supports a vast range of billing models, devices, payment methods, gateways, and processors all in one single integration.
 ---
