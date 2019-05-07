@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: products
 title: Payments Facilitor Platform
 permalink: /products
 section: products
