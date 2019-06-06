@@ -12,12 +12,49 @@
   
                
         <!-- Consumer -->
-    <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For Consumers</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{{ "consumers/features" | relative_url }}">Overview</a></li>
-                                    <li><a href="{{ "consumers/products" | relative_url }}">Account Types</a></li>
-                                    <li><a href="{{ "consumers/solutions" | relative_url }}">Money Transfer</a></li>
-                                    <li><a href="{{ "consumers/fees" | relative_url }}">Pricing &amp; Fees</a></li>
+    <li class="menu-item-has-childrennu-header__nav-link u-header__nav-link-toggle" 
+         data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+      <a id="personalMegaMenu" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="personalSubMenu"><span class="menu-item-span">For Consumers</span></a>
+            <ul id="personalSubMenu" class="sub-menu">
+               <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix--md" aria-labelledby="personalMegaMenu">
+                  <div class="u-header__mega-menu-wrapper">
+                    <span class="u-header__sub-menu-title">Features</span>
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <ul class="u-header__sub-menu-nav-group">
+                                    <li><a class="u-header__sub-menu-nav-link" href="{{ "consumers/features" | relative_url }}">Overview</a></li>
+                                    <li><a class="u-header__sub-menu-nav-link" href="{{ "consumers/products" | relative_url }}">Account Types</a></li>
+                                    <li><a class="u-header__sub-menu-nav-link" href="{{ "consumers/solutions" | relative_url }}">Money Transfer</a></li>
+                                    <li><a class="u-header__sub-menu-nav-link" href="{{ "consumers/fees" | relative_url }}">Pricing &amp; Fees</a></li>
+                           </ul>
+                      </div>
+
+                      <div class="col-sm-6">
+                        <ul class="u-header__sub-menu-nav-group">
+                          <li><a class="u-header__sub-menu-nav-link" href="{ "consumers/fees" | relative_url }}">Pricing &amp; Fees</a></li>
+                          <li><a class="u-header__sub-menu-nav-link" href="#">Claim Account</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                  <div class="u-header__product-banner">
+                    <div class="d-flex align-items-end">
+                      <img class="img-fluid mr-4" src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1554265869/img/mockups/img7.png" alt="Image Description">
+                      <div class="u-header__product-banner-content">
+                        <div class="mb-4">
+                          <span class="u-header__product-banner-title">Customize Your Cards</span>
+                          <p class="u-header__product-banner-text">Personalize your card accounts today.</p>
+                        </div>
+                        <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="#">Learn More <span class="fas fa-angle-right ml-2"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
                                 </ul>
 </li>
   
@@ -67,8 +104,12 @@
 
   <!-- For Business -->
   
-  <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For Business</span></a>
-                                <ul class="sub-menu">
+    <li class="menu-item-has-childrennu-header__nav-link u-header__nav-link-toggle" 
+         data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut">
+      <a id="businessMegaMenu" class="u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="businessSubMenu"><span class="menu-item-span"> For Businesses</span></a>
+      <ul id="businessSubMenu" class="sub-menu">
                                     <li><a href="{{ "business/features" | relative_url }}">Features</a></li>
                                     <li><a href="{{ "business/products" | relative_url }}">Products</a></li>
                                     <li><a href="{{ "business/solutions" | relative_url }}">Solutions</a></li>
