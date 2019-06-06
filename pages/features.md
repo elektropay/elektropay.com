@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Features
-permalink: /features
+permalink: /business/features
 section: feaures
 intro_paragraph: |
   This is an example features page/section. You can edit it with THE
