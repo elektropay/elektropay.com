@@ -12,7 +12,7 @@
   
                
         <!-- Consumer -->
-    <li class="menu-item-has-children" 
+    <li class="menu-item-has-children u-header__nav-link-toggle" 
          data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
@@ -54,7 +54,6 @@
                     </div>
                   </div>
                 </div>
-              </li>
                                 </ul>
 </li>
   
@@ -104,16 +103,18 @@
 
   <!-- For Business -->
   
-<li class="menu-item-has-children u-header__nav-link u-header__nav-link-toggle" 
+<li class="menu-item-has-children u-header__nav-link-toggle" 
          data-event="hover"
          data-animation-in="slideInUp"
         data-animation-out="fadeOut">
-      <a id="businessMegaMenu" class="u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="businessSubMenu"><span class="menu-item-span"> For Businesses</span></a>
+<a id="businessMegaMenu" class="u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="businessSubMenu"><span class="menu-item-span"> For Businesses</span></a>
       <ul id="businessSubMenu" class="sub-menu">
+        <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="businessMegaMenu">
                                     <li><a href="{{ "business/features" | relative_url }}">Features</a></li>
                                     <li><a href="{{ "business/products" | relative_url }}">Products</a></li>
                                     <li><a href="{{ "business/solutions" | relative_url }}">Solutions</a></li>
                                     <li><a href="{{ "business/plans" | relative_url }}">Plans &amp; Pricing</a></li>
+        </div>
                                 </ul>
 </li>
 <!-- <li class="nav-item hs-has-mega-menu u-header__nav-item menu-item-has-children"
