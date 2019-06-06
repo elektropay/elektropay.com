@@ -10,6 +10,87 @@
   </li>
 {% endfor %}
 
+  <!-- Home -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item menu-item-has-children"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-position="left">
+                <a id="businessMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">For Business</a>
+
+                <!-- Home - Mega Menu -->
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="businessMegaMenu">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
+                      <!-- Banner Image -->
+                      <div class="u-header__banner" style="background-image: url(https://res.cloudinary.com/lmj6rf6tz/image/upload/v1559811995/img/750x750/menu_banner.jpg);">
+                        <div class="u-header__banner-content">
+                          <div class="mb-4">
+                            <span class="u-header__banner-title">Branding Works</span>
+                            <p class="u-header__banner-text">Experience a level of our quality in both design &amp; customization works.</p>
+                          </div>
+                          <a class="btn btn-primary btn-sm btn-pill transition-3d-hover" href="#">Learn More <span class="fas fa-angle-right ml-2"></span></a>
+                        </div>
+                      </div>
+                      <!-- End Banner Image -->
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="row u-header__mega-menu-wrapper">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <span class="u-header__sub-menu-title">Features</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/features" | relative_url }}">Overview</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/features" | relative_url }}">Business</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/features" | relative_url }}">Marketing</a></li>
+                          </ul>
+
+                          <span class="u-header__sub-menu-title">Products/span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="business/products">Overview</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="business/products">Products Start-Up</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="business/products">Products Business</a></li>
+                          </ul>
+
+                          <span class="u-header__sub-menu-title">Solutions</span>
+                          <ul class="u-header__sub-menu-nav-group">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/solutions" | relative_url }}">Solutions Agency</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/solutions" | relative_url }}">Solutions Company</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/solutions" | relative_url }}">Solutions Agency</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <span class="u-header__sub-menu-title">Marketplace</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/marketplace" | relative_url }}">Marketplace Creative</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/marketplace" | relative_url }}">Marketplace SaaS</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/marketplace" | relative_url }}">Marketplace Business</a></li>
+                         </ul>
+
+                          <span class="u-header__sub-menu-title">Security</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/security" | relative_url }}">Security Agency</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/security" | relative_url }}">Security Start-Up</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/security" | relative_url }}">Security Business</a></li>
+                          </ul>
+
+                          <span class="u-header__sub-menu-title">Payments</span>
+                          <ul class="u-header__sub-menu-nav-group">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/payments" | relative_url }}">Overview </a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/payments" | relative_url }}">Payment Types </a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/payments" | relative_url }}">Virtual Terminal</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="{{ "business/pricing" | relative_url }}">Plans &amp; Pricing</a></li>
+                          
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Business - Mega Menu -->
+              </li>
+              <!-- End Business -->
 
 <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For People</span></a>
                                 <ul class="sub-menu">
@@ -20,7 +101,8 @@
                                 </ul>
 </li>
 
-<li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For Business</span></a>
+<li class="menu-item-has-children hs-has-mega-menu" data-event="hover" data-animation-in="slideInUp" data-animation-out="fadeOut" data-position="left">
+  <a id="businessMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false"><span class="menu-item-span">For Business </span></a>
                                 <ul class="sub-menu">
                                     <li><a href="{{ "business/features" | relative_url }}">Features</a></li>
                                     <li><a href="{{ "business/products" | relative_url }}">Products</a></li>
@@ -35,7 +117,7 @@
                                     <li><a href="{{ "about" | relative_url }}">About</a></li>
                                     <li><a href="{{ "contact" | relative_url }}">Contact</a></li>
                                     <li><a href="{{ "blog" | relative_url }}">Elektrolog</a></li>
-                                    <li><a href="{{ "careers" | relative_url }}">Careers</a></li>
+                                    <li><a href="{{ "careers" | relative_url }}">Careers<span class="badge badge-success badge-pill ml-1">We're hiring</span></a></li>
                                 </ul>
 </li>
   
