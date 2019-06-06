@@ -2,25 +2,4 @@
 
 - text: Start
   url: / 
-- text: For Business
-  url: /business
-  sublinks:
-    - title: Features
-      url: /business/features
-    - title: Products
-      url: /business/products
-    - title: separator
-    - title: Platform Support
-      url: /platform-support
-- text: For People
-  url: /consumers
-  sublinks:
-    - title: Features
-      url: /consumers/features
-    - title: Account Management
-      url: /consumers/accounts
-    - title: separator
-    - title: Customer Support
-      url: /consumers/customer-support
-- text: Pricing
-  url: /pricing  
+ 
