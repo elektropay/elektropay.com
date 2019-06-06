@@ -10,8 +10,17 @@
   </li>
 {% endfor %}
 
-  <!-- Home -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item menu-item-has-children"
+  <!-- For Business -->
+  
+  <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For Business</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ "business/features" | relative_url }}">Features</a></li>
+                                    <li><a href="{{ "business/products" | relative_url }}">Products</a></li>
+                                    <li><a href="{{ "business/solutions" | relative_url }}">Solutions/a></li>
+                                    <li><a href="{{ "business/plans" | relative_url }}">Plans &amp; Pricing</a></li>
+                                </ul>
+</li>
+                <!-- <li class="nav-item hs-has-mega-menu u-header__nav-item menu-item-has-children"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
@@ -89,11 +98,20 @@
                   </div>
                 </div>
                 <!-- End Business - Mega Menu -->
-              </li>
+              </li> -->
               <!-- End Business -->
                 
-        <!-- Shop -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+        <!-- Consumer -->
+    <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For People</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ "consumers/features" | relative_url }}">Overview</a></li>
+                                    <li><a href="{{ "consumers/products" | relative_url }}">Elektro Account</a></li>
+                                    <li><a href="{{ "consumers/solutions" | relative_url }}">Money Transfers/a></li>
+                                    <li><a href="{{ "consumers/fees" | relative_url }}">Pricing &amp; Fees </a></li>
+                                </ul>
+</li>
+  
+              <!-- <li class="nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
@@ -140,7 +158,7 @@
                   <!-- End Mega Menu Banner -->
                 </div>
                 <!-- End Personal - Mega Menu -->
-              </li>
+              </li> -->
               <!-- End Personal -->        
   
 <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">The Company</span></a>
