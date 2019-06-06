@@ -6,10 +6,25 @@
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
         <script src="https://static.elektropay.com/assets/js/plugins.min.js"></script>
+
+  <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
         <script src="https://static.elektropay.com/assets/js/site.min.js"></script>
         <script data-prerender="keep" async="" src="https://use.fortawesome.com/349cfdf6.js"></script>
         <link rel="stylesheet" href="https://fonticons-free-fonticons.netdna-ssl.com/kits/349cfdf6/publications/92668/woff2.css" media="all">
 <!-- local javascript functions -->
+
+<script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 767.98,
+        hideTimeOut: 0
+      });
+  </script>
+
   <script src="https://static.elektropay.com/assets/js/auth.js"></script>
 
   <script>
