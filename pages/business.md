@@ -1,5 +1,5 @@
 ---
-layout: business
+layout: page
 title: Payments Facilitor Platform
 permalink: /business
 section: business
