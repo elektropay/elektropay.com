@@ -1,6 +1,6 @@
 {% assign navurl = page.url | remove: 'index.html' %}
 <ul>
-{% for item in include.navigation %}
+<!-- {% for item in include.navigation %}
   <li class=""><a href="{{ item.url }}"{% if item.url == navurl %} data-current="current page"{% endif %}><span class="menu-item-span">{{ item.text }}</span> </a>  
     {% if item.subitems %}
       
@@ -8,8 +8,35 @@
   
     {% endif %}
   </li>
-{% endfor %}
-  
+{% endfor %} -->
+  {% assign links = site.data.navigation %}
+        {% for link in links %}
+            {% assign class = nil %}
+            {% if page.url contains link.url %}
+                {% assign class = 'active' %}
+            {% endif %}
+            {% if link.sublinks %}
+<li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Company</span></a>
+                <li class=" dropdown {{ class }}">
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="menu-item-span">{{ link.title }}</span> <span class="caret"></span></a>
+                    <ul class="sub-menu dropdown-menu">
+                        {% for sublink in link.sublinks %}
+                            {% if sublink.title == 'separator' %}
+                                <li role="separator" class="divider"></li>
+                            {% else %}
+                                <li>
+                                    <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}"><span class="menu-item-span">{{ sublink.title }}</span></a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li class="{{ class }}">
+                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}"><span class="menu-item-span">{{ link.title }}</span></a>
+                </li>
+            {% endif %}
+        {% endfor %}
   
 <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Company</span></a>
                                 <ul class="sub-menu">
