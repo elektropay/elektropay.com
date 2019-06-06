@@ -1,5 +1,5 @@
 ---
-layout: consumers
+layout: page
 title: Send Money Easily with ElektroPay
 permalink: /consumers
 section: consumers
