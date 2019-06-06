@@ -8,34 +8,26 @@
   
     {% endif %}
   </li>
-{% endfor %} -->
-  {% assign links = site.data.navigation %}
-        {% for link in links %}
-            {% assign class = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = 'active' %}
-            {% endif %}
-            {% if link.sublinks %}
-<li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Company</span></a>
-                <li class=" dropdown {{ class }}">
-                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="menu-item-span">{{ link.title }}</span> <span class="caret"></span></a>
-                    <ul class="sub-menu dropdown-menu">
-                        {% for sublink in link.sublinks %}
-                            {% if sublink.title == 'separator' %}
-                                <li role="separator" class="divider"></li>
-                            {% else %}
-                                <li>
-                                    <a href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}"><span class="menu-item-span">{{ sublink.title }}</span></a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
-            {% else %}
-                <li class="{{ class }}">
-                    <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}"><span class="menu-item-span">{{ link.title }}</span></a>
-                </li>
-            {% endif %}
+{% endfor %}
+
+<li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For People</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ "consumers/features" | relative_url }}">Features</a></li>
+                                    <li><a href="{{ "consumers/account-types" | relative_url }}">Accounts</a></li>
+                                    <li><a href="{{ "consumers/transfers" | relative_url }}">Transfers</a></li>
+                                    <li><a href="{{ "consumers/pricing" | relative_url }}">Pricing</a></li>
+                                </ul>
+</li>
+
+<li class="menu-item-has-children"><a href="#"><span class="menu-item-span">For Business</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ "business/features" | relative_url }}">Features</a></li>
+                                    <li><a href="{{ "business/products" | relative_url }}">Products</a></li>
+                                    <li><a href="{{ "business/solutions" | relative_url }}">Solutions/a></li>
+                                    <li><a href="{{ "business/pricing" | relative_url }}">Pricing</a></li>
+                                </ul>
+</li>
+
   
 <li class="menu-item-has-children"><a href="#"><span class="menu-item-span">Company</span></a>
                                 <ul class="sub-menu">
