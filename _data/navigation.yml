@@ -2,9 +2,9 @@
 
 - text: Start
   url: / 
-- text: Products
-  url: /products
-- text: Features
-  url: /features
+- text: For Business
+  url: /business
+- text: For People
+  url: /consumers
 - text: Pricing
   url: /pricing  
