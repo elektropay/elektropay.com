@@ -1,13 +1,18 @@
     
         <script src="https://static.elektropay.com/assets/js/jquery.min.js"></script>
         <script src="https://static.elektropay.com/assets/js/popper.min.js"></script>
-        <!--<script src="https://static.elektropay.com/assets/js/bootstrap.min.js"></script>-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
         <script src="https://static.elektropay.com/assets/js/plugins.min.js"></script>
 
   <script src="https://static.elektropay.com/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="https://static.elektropay.com/assets/js/components/hs.validation.js"></script>
+  <script src="https://static.elektropay.com/assets/js/components/hs.slick-carousel.js"></script>
+
+  <script src="https://static.elektropay.com/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="https://static.elektropay.com/assets/vendor/slick-carousel/slick/slick.js"></script>
+  <script src="https://static.elektropay.com/assets/js/hs.core.js"></script>
   <script src="https://static.elektropay.com/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
         <script src="https://static.elektropay.com/assets/js/site.min.js"></script>
         <script data-prerender="keep" async="" src="https://use.fortawesome.com/349cfdf6.js"></script>
@@ -24,7 +29,21 @@
         hideTimeOut: 0
       });
   </script>
+<script>
+    $(document).on('ready', function () {
+      // initialization of slick carousel
+      $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
 
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#signupPassword'
+          }
+        }
+      });
+    });
+  </script>
   <script src="https://static.elektropay.com/assets/js/auth.js"></script>
 
   <script>
