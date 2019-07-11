@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: sandbox
 title: Sandbox
 permalink: /sandbox
 section: sandbox
