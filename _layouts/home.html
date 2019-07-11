@@ -2,6 +2,12 @@
 layout: default
 ---
 <style>
+figure {
+    margin-bottom: 0;
+}
+figure {
+    margin: 0 0 1rem;
+}
 .position-relative {
     position: relative !important;
 }
@@ -110,7 +116,7 @@ layout: default
     color: rgba(255, 255, 255, 0.7);
 }
    
-   .font-weight-semi-bold {
+ .font-weight-semi-bold {
     font-weight: 600 !important;
 }
 .text-white {
@@ -120,7 +126,13 @@ layout: default
 .text-indigo {
     color: #2d1582 !important;
 }
-   .svg-divider-polygon {
+    
+.gradient-overlay-half-primary-v3::before {
+    background-image: linear-gradient(90deg, #37e3ff 0%, #00e5b0 100%);
+    background-repeat: repeat-x;
+}
+ 
+.svg-divider-polygon {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0 95%);
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 95%);
 }
