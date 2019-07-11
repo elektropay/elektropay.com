@@ -223,12 +223,6 @@ figure {
 .left-0 {
     left: 0;
 }
-.bottom-0 {
-    bottom: 0;
-}
-.right-0 {
-    right: 0;
-}
 .top-0 {
     top: 0;
 }
@@ -238,7 +232,22 @@ figure {
 .position-absolute {
     position: absolute !important;
 }
-   
+.max-width-40 {
+    max-width: 19.5rem;
+}
+
+@media (min-width: 576px){
+.position-sm-absolute {
+    position: absolute;
+}}
+
+@media (min-width: 576px){
+.mb-sm-n5, .my-sm-n5 {
+    margin-bottom: -2rem !important;
+    }}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}   
 </style>
 
 {% include jumbrotron-front.html %}
