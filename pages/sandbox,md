@@ -1,0 +1,13 @@
+---
+layout: sandbox
+title: The Sandbox
+permalink: /sandbox
+section: sandbox
+intro_paragraph: |-
+
+  Entering our sandbox allows you to get a feel for the Elektropay 
+  experience before applying for a merchant account or going to production. 
+  [Netlify Forms](https://www.netlify.com/docs/form-handling/).
+---
+
+*Send us a message*
