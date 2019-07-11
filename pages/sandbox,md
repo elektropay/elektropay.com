@@ -1,10 +1,13 @@
 ---
-layout: sandbox
-title: Developers love us
+layout: page
+title: Sandbox
 permalink: /sandbox
 section: sandbox
 intro_paragraph: |
-  Learn more about our Sandbox accounts
+  This will be the example of a standard privacy policy page in which we go from -> https://www.iubenda.com/privacy-policy/7804678/legal . You can edit it with Netlify
+  CMS, accessible at `/admin/index.html` or by editing `pages/sandbox.md` in a text editor.
 ---
 
-*Send us a message*
+### Test Everything Elektropay
+
+Entering our sandbox allows you to get a feel for the Elektropay experience before applying for a merchant account or going to production. 
