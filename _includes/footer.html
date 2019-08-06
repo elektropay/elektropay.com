@@ -1,4 +1,53 @@
-<footer class="py-3 bg-light">
+
+</main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="border-top">
+    <div class="container">
+      <div class="border-bottom">
+  
+        <div class="row justify-content-lg-between space-2 space-top-md-3">
+          <div class="col-6 col-sm-4 col-lg-2 mb-7 mb-lg-0">
+         <div class="text-center d-xssm-none">
+        {% if site.show_social_icons %} {% include social_links.html %} {% endif %}
+      </div>
+      <div class="text-right d-none d-xssm-block">
+        {% if site.show_social_icons %} {% include social_links.html %} {% endif %}
+      </div>
+            </div>
+
+          <div class="col-6 col-sm-4 col-lg-2 mb-7 mb-lg-0">
+            <h4 class="h6">Company</h4>  
+          </div>
+   
+          
+      <div class="text-center py-7">
+        <!-- Copyright -->
+<div class="col-xssm-6 text-muted text-center d-xssm-none">
+     <p class="small text-muted mb-0">&copy; {{ site.time | date: '%Y' }} Elektropay.</p>
+      </div>
+      <div class="col-xssm-6 text-muted d-none d-xssm-block">
+     <p class="small text-muted mb-0">&copy; {{ site.time | date: '%Y' }} Elektropay.</p>
+      </div>
+        <!-- End Copyright -->
+      </div>
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->    
+        
+  <!-- Go to Top -->
+  <a class="js-go-to u-go-to" href="#"
+    data-position='{"bottom": 15, "right": 15 }'
+    data-type="fixed"
+    data-offset-top="400"
+    data-compensation="#header"
+    data-show-effect="slideInUp"
+    data-hide-effect="slideOutDown">
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
+  </a>
+  <!-- End Go to Top -->
+<footer class="d-none py-3 bg-light">
   <div class="container">
     <div class="row footer align-items-center">
       <div class="col-xssm-6 text-muted text-center d-xssm-none">
@@ -13,9 +62,7 @@
       <div class="col-xssm-6 text-right d-none d-xssm-block">
         {% if site.show_social_icons %} {% include social_links.html %} {% endif %}
       </div>
-    </div>
-  </div>
-</footer>
+
 
 <!-- scripts -->
 <script src="https://static.elektropay.com/assets/js/jquery.min.js"></script> 
