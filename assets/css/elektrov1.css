@@ -22630,3 +22630,26 @@ label.btn {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+
+
+#SVGHero { min-height:720px; } 
+h1, .h1 { font-size: 3.425rem; } 
+.bg-elektro { background-color: #9ad0e1 !important; } 
+.btn[href] { cursor: pointer; } 
+.transition-3d-hover { transition: all 0.2s ease-in-out; } 
+.shadow-soft { box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25) !important; } 
+.text-lg-left { text-align: left !important; } 
+.text-lg-right { text-align: right !important; } 
+.text-center { text-align: center !important; } 
+.text-white-70 { color: rgba(255, 255, 255, 0.7); } 
+.font-weight-semi-bold { font-weight: 600 !important; } 
+.text-white { color: #fff !important; } 
+.text-indigo { color: #2d1582 !important; } .gradient-overlay-half-primary-v3
+::before { background-image: linear-gradient(90deg, #31788a 0%, #9ad0e1 100%); background-repeat: repeat-x; min-height:680px; } [class*="gradient-overlay-half"]
+::before { position: absolute; top: 0; right: 0; bottom: 0; right: 0; z-index: -1; width: 100%; height: 100%; content: ""; } 
+.z-index-n1 { z-index: -1; } 
+.svg-divider-polygon { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } .left-0 { left: 0; } .top-0 { top: 0; } [class*="gradient-overlay-half"] { position: relative; } 
+.position-absolute { position: absolute !important; } 
+.max-width-40 { max-width: 19.5rem; } 
+.position-sm-absolute { position: absolute; } 
+
