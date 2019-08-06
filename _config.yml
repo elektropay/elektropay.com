@@ -1,84 +1,100 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Elektropay
-email: hello@elektropay.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
-baseurl: "" # the subpath of your site if applicable, e.g. /blog
-url: "https://elektropay.com" # the base hostname & protocol for your site, e.g. https://example.com
+author: Kimfucious
+baseurl: ""
+brand: Sakura
+copyright: abts.io
+description: A clean Jekyll theme with baked in Bootstrap 4, responsive images, and more...
+email: example@example.com 
+title: Sakura Jekyll Theme 
+url: "https://sakura.abts.io"
 
-# Permalink format (/blog/ is ignored for pages)
-permalink: /blog/:title
+# Not using because Gulp is now processing SCSS
+# sass:
+#   sass_dir: css
+#   style: compressed
 
-# Enable section IDs in frontmatter, useful for identifying current page
-# (used as a hook for styling etc)
-section: true
+# Algolia Search
+algolia:
+  application_id: 4P42FOBOZA # Use your (non-admin) search only api key here.
+  index_name: sakura #Use an index you created on Algolia.
 
-# set to 'true' to enable Netlify CMS (/admin) in production builds
-netlifycms: true
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: "/:collection/:path/"
+  posts:
+    output: true
+    permalink: "/:collection/:title/"
 
-# set to 'true' to enable Google Analytics tracking code in production builds
-analytics: false
-
-# Compress CSS
-sass:
-  style: compressed
-  sass_dir: _sass
-
-# Compress HTML (in liquid via layouts/compress.html)
-compress_html:
-  clippings: all
-
-# set some common post defaults
+# Defaults : these allow you to set default values for front matter
 defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
+  - scope:
+      path: "_posts"
+      type: posts
     values:
-      layout: "post" # set the correct default template for a post
-      section: "post" # set the root section name
+      layout: post 
+      type: post
+  - scope:
+      path: "pages"
+      type: pages
+    values:
+      layout: default 
+  - scope:
+      path: "_docs"
+      type: docs
+    values:
+      layout: post
+      type: doc
 
-# Build settings
+# Exclude from Jekyll processing
+exclude: [
+  "_assets",
+  "Gemfile",
+  "Gemfile.lock",
+  "gulpfile.js",
+  "node_modules",
+  "package.json",
+  "publish.sh", 
+  "yarn-error.log",
+  "yarn.lock"
+]
+
+# Pagination (using jekyll-paginate-v2)
+pagination:
+  enabled: true
+  per_page: 4 
+  paginate_path: "/page:num"
+  sort_reverse: true
+  title: ":title"
+  trail:
+    before: 2
+    after: 2
+
+# Plugins
+plugins: [jekyll-paginate-v2, jemoji, jekyll-sitemap, jekyll-seo-tag]
+
+# SEO
+social:
+  name: Elektropay
+  links:
+    - https://github.com/elektropay
+    - https://www.linkedin.com/in/elektropay/
+webmaster_verifications:
+  google: uubLfpcORmDWkM8pI-yKODVVZD3VSpUYFSwkQJcOuZE
+
+
+# Social icons
+show_social_icons: true
+facebook_username: 
+github_username: elektropay 
+googleplus_username: 
+linkedin_username: everpay
+slack_username: 
+twitter_username: 
+
+# Syntax highlighting <= disables built-in highlighter so that we can use Prism
 markdown: kramdown
-
-# Kramdown options
+highlighter: rouge
 kramdown:
-  # Prevent IDs from being added to h1-h6 tags
-  auto_ids: false
-
-# Include in processing (e.g. Netlify directives)
-# Uncomment before use
-
-#include:
-#  - _redirects
-#  - _headers
-
-# Exclude from processing.
-# The following items will not be processed.
-exclude:
-  - README.md
-  - LICENSE.txt
-  - netlify.toml
-  - feed.xml
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  input: GFM
