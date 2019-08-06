@@ -1,36 +1,7 @@
----
-layout: compress
----
-
-<!DOCTYPE html>
-<html data-current="{{ page.section }}" lang="en">
-
-  {% include head.html %}
-
-  <body>
-    
-        <div class="page-loader">
-            <div class="page-loader-inner">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-    
-    {% include header.html %}
-
-    <div class="wrapper">
-
-     {{ content }}
-
-    {% include footer.html %}
-
-    </div>
-    <!-- Wrapper end-->
-    
-   {% include footer-scripts.html %}
-
-  </body>
-
-</html>
+{% include head.html %}
+{% include navbar.html %}
+{% include jumbotron.html %}
+{% include search_modal.html %}
+{{ content }} 
+{% include pagination.html %}
+{% include footer.html %}

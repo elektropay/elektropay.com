@@ -1,0 +1,24 @@
+// Color
+$primary: #ff859b;
+$highlight: lighten($primary, 0%);
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  /* custom: between xs and sm used in footer */ xssm: 425px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Links
+$link-color: #3194c3;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
+$link-decoration: none;
+
+// Tooltips
+$tooltip-bg: #3194c3;
+$tooltip-color: white;
+$tooltip-opacity: 0.9;
