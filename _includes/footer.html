@@ -1,8 +1,6 @@
 
 </main>
-  <!-- ========== END MAIN CONTENT ========== -->
 
-  <!-- ========== FOOTER ========== -->
 <footer class="footer space-top-lg-1">
 <div class="footer-widgets">
 <div class="container">
@@ -71,7 +69,7 @@
   </div>
   </div>
   
-  <hr class="mb-1">
+  <hr class="py-1">
   
   <div class="footer-bar">
     <div class="container">
@@ -124,18 +122,16 @@
    
           
       <div class="text-center py-7">
-        <!-- Copyright -->
 <div class="col-xssm-6 text-muted text-center d-xssm-none">
      <p class="small text-muted mb-0">&copy; {{ site.time | date: '%Y' }} Elektropay.</p>
       </div>
       <div class="col-xssm-6 text-muted d-none d-xssm-block">
      <p class="small text-muted mb-0">&copy; {{ site.time | date: '%Y' }} Elektropay.</p>
       </div>
-        <!-- End Copyright -->
+   
       </div>
     </div>
   </footer>
-  <!-- ========== END FOOTER ========== -->    
         
   <!-- Go to Top -->
   <a class="js-go-to u-go-to" href="#"
@@ -206,11 +202,11 @@
       $.HSCore.components.HSHeader.init($('#header'));
 
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["ideal", "fastest", "convenient"],
+        strings: ["payments", "transfers", "banking"],
         typeSpeed: 60,
         loop: true,
         backSpeed: 25,
-        backDelay: 1500
+        backDelay: 2000
       });
 
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
