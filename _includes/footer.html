@@ -1,16 +1,16 @@
 
 </main>
 
-<footer class="footer bg-dark space-top-lg-1">
+<footer class="footer bg-dark space-top-lg-1 u-sticky-footer">
 <div class="footer-widgets">
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-between align-items-center">
     <div class="col-md-4">
       <aside class="widget widget-text">
         <div class="widget-title mb-1">
        <div><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,e_grayscale,o_83,w_156/v1442882924/logo_qxdkvh.png"></div></div>
         <div class="textwidget">
-          <p>Elektropay is an Open Payments Platform that enables customers to manage payments, transfer money, connect thier personal, business and payment accounts – all in one app.</p>
+          <p class="text-white">Elektropay is an Open Payments Platform that enables customers to manage payments, transfer money, connect thier personal, business and payment accounts – all in one app.</p>
           <ul class="flag-icons">
             <li></li>
           </ul>
@@ -21,8 +21,10 @@
  <div class="col-md-2">
     <aside class="widget widget-recent-entries">
       <div class="widget-title">
-        <h6>Personal</h6></div>
-      <ul><li><a href="/consumers/platform">Platform</a></li>
+        <h6 class="h4">Personal</h6>
+      </div>
+      <ul>
+        <li><a href="/consumers/platform">Platform</a></li>
         <li><a href="/consumers/billy-wallet">Wallet</a></li>
         <li><a href="/consumers/marketplace">Marketplace</a></li>
         <li><a href="/consumers/pricing">Fees &amp; Pricing</a></li>
@@ -32,7 +34,7 @@
   <div class="col-md-2"> 
     <aside class="widget widget-recent-entries">
       <div class="widget-title">
-        <h6>Business</h6></div>
+       <h6 class="h4">Business</h6></div>
       <ul><li><a href="/business/payment-methods">Payment Methods</a></li>
         <li><a href="/business/f2f-payments">Retail Payments</a></li>
         <li><a href="/business/data-security">Data Security</a></li>
@@ -43,7 +45,7 @@
   <div class="col-md-2"> 
     <aside class="widget widget-recent-entries">
       <div class="widget-title">
-        <h6>Resources</h6>
+       <h6 class="h4">Resources</h6>
       </div>
       <ul>
         <li><a href="//support.elektropay.com">Help &amp; Support</a></li>
@@ -56,7 +58,7 @@
     <div class="col-md-2"> 
      <aside class="widget widget-recent-entries">
        <div class="widget-title">
-         <h6>Company</h6>
+        <h6 class="h4">Company</h6>
        </div>
        <ul>
          <li><a href="/about">About</a></li>
@@ -75,28 +77,29 @@
   <div class="footer-bar bg-dark"> 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <div class="copyright text-left">
-            <ul class="legals">
-              <li><a href="/terms">Terms</a></li>
-              <li><a href="/privacy">Privacy</a></li>
-              <li><a href="/security">Security</a></li>
-              <li><a href="//status.elektropay.com" target="_blank">Status</a> <span class="color-dot none"></span><span class="color-description"><small>Operational</small></span></li>
+        <div class="col-md-4 col-sm-6">
+          <div class="copyright text-white-70">
+            <ul class="legals small list-inline mb-0">
+              <li class="list-inline-item"><a href="/terms">Terms</a></li>
+              <li class="list-inline-item"><a href="/privacy">Privacy</a></li>
+              <li class="list-inline-item"><a href="/security">Security</a></li>
+              <li class="list-inline-item"><a href="//status.elektropay.com" target="_blank">Status</a> <span class="color-dot none"></span><span class="color-description"><small>Operational</small></span></li>
             </ul>
           </div>
         </div>
-        <div class="col-md-4"><ul class="creditcard-icons">
-          <li><a href="#"><i class="fab fa-cc-discover"></i></a></li>
-          <li><a href="#"><i class="fab fa-cc-jcb"></i></a></li>
-          <li><a href="#"><i class="fab fa-cc-amex"></i></a></li>
-          <li><a href="#"><i class="fab fa-cc-stripe"></i></a></li>
-          <li><a href="#"><i class="fab fa-cc-apple-pay"></i></a></li>
-          <li><a href="#"><i class="fab fa-cc-amazon-pay"></i></a></li>
-          <li><a href="#"><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,h_20/v1444311765/pci-dss_ba9rpw.png"></a></li>
+        <div class="col-md-4">
+          <ul class="creditcard-icons list-inline mb-0">
+          <li class="list-inline-item"><a href="#"><i class="fab fa-cc-discover"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-cc-jcb"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-cc-amex"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-cc-stripe"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-cc-apple-pay"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-cc-amazon-pay"></i></a></li>
+          <li class="list-inline-item"><a href="#"><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,h_20/v1444311765/pci-dss_ba9rpw.png"></a></li>
           </ul>
         </div>
-        <div class="col-md-4">
-          <div class="copyright text-center text-muted"><p>&copy; {{ site.time | date: '%Y' }} Elektropay 2019. All Rights Reserved.</p></div>
+        <div class="col-md-4 col-sm-6 text-sm-left">
+          <div class="copyright text-center small text-white-70 mb-0"><p>&copy; {{ site.time | date: '%Y' }} Elektropay - All Rights Reserved.</p></div>
         </div>
       </div>
     </div>
