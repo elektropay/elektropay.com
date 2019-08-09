@@ -302,7 +302,8 @@
       
 <script src="https://static.elektropay.com/assets/js/hs.core.js"></script> 
 <script src="https://static.elektropay.com/assets/js/components/hs.header.js"></script> 
-<script src="https://static.elektropay.com/assets/js/components/hs.svg-injector.js"></script> 
+<script src="https://static.elektropay.com/assets/js/components/hs.svg-injector.js"></script>
+<script src="https://static.elektropay.com/assets/js/components/hs.unfold.js"></script>      
 <script src="https://static.elektropay.com/assets/js/components/hs.fancybox.js"></script>
 <script src="https://static.elektropay.com/assets/js/components/hs.slick-carousel.js"></script> 
 <script src="https://static.elektropay.com/assets/js/components/hs.validation.js"></script> 
@@ -331,7 +332,7 @@
     $.HSCore.components.HSHeader.init($('#header'));
 
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["payments", "payment", "money", "checkout", "banking", "wallet"],
+        strings: ["payments", "payment", "money", "account", "banking", "wallet"],
         typeSpeed: 60,
         loop: true,
         backSpeed: 25,
@@ -339,7 +340,7 @@
       });
 
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
-
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>      
