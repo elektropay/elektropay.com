@@ -569,13 +569,13 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1060px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1340px;
   }
 }
 
@@ -22611,6 +22611,17 @@ label.btn {
 .u-datepicker .flatpickr-day.selected.startRange, .u-datepicker .flatpickr-day.selected.endRange {
   color: #fff;
   background-color: #377dff;
+}
+.footer {
+    background: #262F36;
+}
+.footer-widgets + .footer-bar {
+    border-top: 1px solid #2c2c2c;
+}
+.footer-bar {
+    text-align: center;
+    font-size: .75rem;
+    padding: 22px 0;
 }
 
 .u-datepicker .numInputWrapper span.arrowUp,
