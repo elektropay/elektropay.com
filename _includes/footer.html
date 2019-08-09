@@ -9,7 +9,26 @@
     <div class="col-6 col-sm-4 col-lg-4 mb-7 mb-lg-0">
       <aside class="widget widget-text">
         <div class="widget-title mb-1">
-       <div><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,e_grayscale,o_83,w_156/v1442882924/logo_qxdkvh.png"></div></div>
+          <div class="d-flex align-items-center">
+            <div><img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/c_scale,e_grayscale,o_83,w_150/v1442882924/logo_qxdkvh.png"></div>
+      
+          <!-- Language -->
+          <div class="position-relative">
+            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button" aria-controls="languageDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="hover" data-unfold-target="#languageDropdown" data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+               <img class="dropdown-item-icon" src="/assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+              <span class="d-inline-block d-sm-none">US</span>
+              <span class="d-none d-sm-inline-block">United States</span>
+            </a>
+
+            <div id="languageDropdown" class="dropdown-menu dropdown-unfold u-unfold--css-animation u-unfold--hidden" aria-labelledby="languageDropdownInvoker" style="animation-duration: 300ms; left: 0px;">
+              <a class="dropdown-item active" href="#">English</a>
+              <a class="dropdown-item" href="#">Deutsch</a>
+              <a class="dropdown-item" href="#">Español&lrm;</a>
+            </div>
+          </div>
+          <!-- End Language -->
+  </div>
+           </div>
         <div class="textwidget">
           <p class="small text-white">Elektropay is an Open Payments Platform that enables customers to manage payments, transfer money, connect thier personal, business and payment accounts – all in one app.</p>
           <ul class="flag-icons">
@@ -208,7 +227,7 @@
     $.HSCore.components.HSHeader.init($('#header'));
 
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["payments", "payments", "money", "wallet"],
+        strings: ["payments", "payment", "money", "checkout", "banking", "wallet"],
         typeSpeed: 60,
         loop: true,
         backSpeed: 25,
