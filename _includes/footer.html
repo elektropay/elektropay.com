@@ -303,8 +303,8 @@
 <script src="https://static.elektropay.com/assets/js/components/hs.unfold.js"></script>      
 <script src="https://static.elektropay.com/assets/js/components/hs.fancybox.js"></script>
 <script src="https://static.elektropay.com/assets/js/components/hs.slick-carousel.js"></script> 
+<script src="https://static.elektropay.com/assets/js/components/hs.step-form.js"></script>      
 <script src="https://static.elektropay.com/assets/js/components/hs.validation.js"></script> 
-<script src="https://static.elektropay.com/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script> 
 <script src="https://static.elektropay.com/assets/js/components/hs.go-to.js"></script>
       
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> 
@@ -335,7 +335,7 @@
         backSpeed: 25,
         backDelay: 2000
       });
-
+      $.HSCore.components.HSStepForm.init('.js-step-form');
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
       $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
       $.HSCore.components.HSGoTo.init('.js-go-to');
