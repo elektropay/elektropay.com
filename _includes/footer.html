@@ -329,14 +329,20 @@
     $.HSCore.components.HSHeader.init($('#header'));
 
       var typed = new Typed(".u-text-animation.u-text-animation--typing", {
-        strings: ["payments", "payment", "money", "account", "banking", "wallet"],
+        strings: ["payments", "Payment", "Money", "Account", "Banking", "Wallet"],
         typeSpeed: 70,
         loop: true,
         backSpeed: 25,
         backDelay: 2000
       });
+     
+     // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+   
       $.HSCore.components.HSStepForm.init('.js-step-form');
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
       $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
