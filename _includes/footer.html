@@ -350,6 +350,10 @@
       });
 
       $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+      
+     $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700
+      });
     });
 
    $(document).on('ready', function () {
@@ -364,6 +368,7 @@
         backDelay: 2000
       });
      
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
       $.HSCore.components.HSSVGIngector.init('.js-svg-injector');  
       $.HSCore.components.HSStepForm.init('.js-step-form');
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
