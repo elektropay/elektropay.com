@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ site.title }}</title>
   {%- seo -%}
-  <link rel="shortcut icon" href="favicon.ico" /> 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" /> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
   <link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css">
@@ -209,6 +208,19 @@ figure {
 }
 .text-indigo {
     color: #2d1582 !important;
+}
+  .card-trans {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent!important;
+    background-clip: border-box;
+    border: 0px solid #e7eaf3!important; 
+    border-radius: 0.3125rem;
 }
 .gradient-overlay-half-primary-v3::before {
     background-image: linear-gradient(90deg, #31788a 0%, #219fca 100%);
