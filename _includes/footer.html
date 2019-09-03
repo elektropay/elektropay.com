@@ -344,7 +344,11 @@
 <script src="https://static.elektropay.com/assets/js/plugins.min.js"></script> 
 <script src="https://static.elektropay.com/assets/js/site.min.js"></script> 
 <script>
-  $("#country").countrySelect();
+  $("#country").countrySelect({
+  defaultCountry: "gb",
+  preferredCountries: ['us', 'ca', 'gb', 'mx'],
+  responsiveDropdown: true
+});
 </script>
  <script>
     $(window).on('load', function () {
