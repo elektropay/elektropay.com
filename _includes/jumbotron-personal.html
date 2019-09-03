@@ -1,12 +1,13 @@
- <div class="container space-2 space-top-md-5 space-bottom-md-3 space-top-lg-4">
+<div id="SVGHero" class="position-relative bg-white overflow-hidden"> 
+<div class="container z-index-2 space-2 space-top-md-5 space-bottom-md-3 space-top-lg-4">
       <div class="row justify-content-lg-between align-items-lg-center">
         <div class="col-lg-5 mb-4">
           <!-- Title -->
           <div class="mb-3">
-            <h1 class="display-4 font-size-md-down-5 mb-0">Easy start,</h1>
+  {%- if page.description -%}<h1 class="display-4 text-white-70 font-size-md-down-5 mb-0">{{ page.description }}</h1>{%- endif -%}
             <h2 class="text-primary display-3 font-size-md-down-5 font-weight-semi-bold">Easy setup</h2>
           </div>
-          <p>Integrate and setup your business with Front. Attract more visitors, and win more business with Front template.</p>
+          <p>Get the real exchange rate with Elektropay. Real-time, E-wallet, Cards, Mass payouts, Recieving payments.</p>
           <!-- End Title -->
         </div>
 
@@ -14,7 +15,7 @@
           <!-- SVG Icon -->
           <div id="SVGeasyStart" class="svg-preloader d-none d-lg-block">
             <figure class="ie-subscribe-2">
-              <img class="js-svg-injector" src="../../assets/svg/flat-icons/easy-start.svg" alt="Image Description"
+              <img class="js-svg-injector" src="/assets/svg/flat-icons/easy-start.svg" alt=""
                    data-parent="#SVGeasyStart">
             </figure>
           </div>
@@ -24,7 +25,7 @@
 
       <div class="row">
         <div class="col-lg-8">
-          <h3 class="h6">Join Front for free now!</h3>
+          <h3 class="h6">Join for free now!</h3>
 
           <!-- Form -->
           <form class="js-validate">
@@ -66,7 +67,7 @@
                 <label class="custom-control-label" for="termsCheckbox">
                   <small>
                     I agree to the
-                    <a class="link-muted" href="../pages/terms.html">Terms and Conditions</a>
+                    <a class="link-muted" href="/legal/terms/">Terms and Conditions</a>
                   </small>
                 </label>
               </div>
@@ -77,6 +78,7 @@
         </div>
       </div>
     </div>
+</div>
     <!-- End Hero Section -->
 
     <hr class="my-0">
